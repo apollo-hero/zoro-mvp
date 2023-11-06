@@ -1,0 +1,1074 @@
+{
+  "account": {
+    "marketBreakdown": {
+      "cellGroup": {
+        "dailyEarnings": "Daily Earnings",
+        "netApy": "Net APY",
+        "netApyTooltip": "Percentage of your total supply balance received as yearly interests",
+        "netApyWithVaultStakeTooltip": "Percentage of your total supply and vault stake received as yearly interests",
+        "totalBorrow": "Total Borrow",
+        "totalSupply": "Total Supply",
+        "totalVaultStake": "Total Vault Stake"
+      },
+      "tables": {
+        "borrowTableTitle": "Borrowed assets",
+        "supplyTableTitle": "Supplied assets",
+        "tabletBorrowTabTitle": "Borrow",
+        "tabletSupplyTabTitle": "Supplied",
+        "tabletTitle": "Assets"
+      }
+    },
+    "poolsBreakdown": {
+      "poolTagTooltip": "Borrow limit used: {{borrowLimitUsedPercentage}}",
+      "title": "Pools"
+    },
+    "vaultsBreakdown": {
+      "table": {
+        "column": {
+          "apr": "APR",
+          "asset": "Asset",
+          "stake": "Stake"
+        },
+        "title": "Staked"
+      },
+      "title": "Vaults"
+    }
+  },
+  "accountData": {
+    "borrowBalance": "Borrow balance ({{tokenSymbol}})",
+    "borrowLimit": "Borrow limit",
+    "borrowLimitUsed": "Borrow limit used",
+    "dailyEarnings": "Daily earnings",
+    "supplyBalance": "Supply balance ({{tokenSymbol}})"
+  },
+  "accountHealth": {
+    "accessibilityLabel": "Representation of the current state of your account",
+    "borrowLimitTooltip": "Current borrow balance:<LineBreak/>{{borrowBalance}} ({{borrowLimitUsedPercentage}} of your borrow limit)",
+    "borrowLimitUsed": "Borrow limit used:",
+    "currentBorrowBalance": "Current:",
+    "limit": "Limit:",
+    "max": "Max:",
+    "safeBorrowLimitTooltip": "Safe borrow limit:<LineBreak/>{{safeBorrowLimit}} ({{safeBorrowLimitPercentage}}% of your borrow limit)"
+  },
+  "accountPlaceholder": {
+    "assetsWillAppearHere": "Supplied and borrowed assets will appear here",
+    "letsGetStarted": "Let’s get started"
+  },
+  "announcements": {
+    "bethUpdate": {
+      "description": "Binance paused BETH withdrawals on 2023-04-26. We recommend users reduce their exposure to BETH on Venus. Borrowing has been paused. Convert BETH to WBETH on-chain at a 1:1 ratio <Link>here</Link>."
+    },
+    "sxpDisabling": {
+      "description": "Following recommendation from Gauntlet, borrow and supply for SXP has been paused given concerns around SXP migrating to a new chain and expected decline in SXP liquidity."
+    },
+    "trxMigration": {
+      "description": "Zoro supports a bunch of alts. For more information see the <Link>official announcement by Binance</Link>."
+    },
+    "tusdMigration": {
+      "description": "Zoro supports a bunch of alts. Borrowing and supplying has been paused for the lorem token. For more information see the <Link>lorem ipsum dolor</Link>."
+    }
+  },
+  "approveToken": {
+    "approveButtonLabel": "Approve"
+  },
+  "approveTokenSteps": {
+    "approveTokenButton": {
+      "text": "Approve {{tokenSymbol}}",
+      "tooltip": "We use PancakeSwap to support our swap feature, which requires spending approval for any token you wish to exchange from"
+    },
+    "step1": "Step 1",
+    "step2": "Step 2"
+  },
+  "apyChart": {
+    "tooltipItemLabels": {
+      "borrowApy": "Borrow APY",
+      "date": "Date",
+      "supplyApy": "Supply APY",
+      "totalBorrow": "Total borrow",
+      "totalSupply": "Total supply"
+    }
+  },
+  "asset": {
+    "marketInfo": {
+      "title": "Market info"
+    }
+  },
+  "assetInfo": {
+    "borrowApy": "Borrow APY",
+    "distributionApy": "Distribution APY ({{tokenSymbol}})",
+    "supplyApy": "Supply APY",
+    "totalApy": {
+      "borrowApyTooltip": "Borrow APY - Distribution APYs",
+      "label": "Total APY",
+      "supplyApyTooltip": "Supply APY + Distribution APYs"
+    }
+  },
+  "authModal": {
+    "accountDetails": {
+      "logOutButtonLabel": "Log out"
+    },
+    "title": {
+      "connectWallet": "Connect a wallet",
+      "yourAccount": "Your account"
+    },
+    "walletList": {
+      "comingSoon": "Coming soon...",
+      "termsOfServiceLink": "By connecting a wallet, you agree to Zoro's <Anchor>Terms of Service</Anchor>"
+    }
+  },
+  "breadcrumbs": {
+    "account": "Account",
+    "convertVrt": "Convert VRT",
+    "dashboard": "Dashboard",
+    "governance": "Governance",
+    "history": "History",
+    "leaderboard": "Leaderboard",
+    "markets": "Markets",
+    "pools": "Pools",
+    "proposal": "Proposal #{{proposalId}}",
+    "swap": "Swap",
+    "vai": "VAI",
+    "vaults": "Vaults",
+    "xvs": "XVS"
+  },
+  "zkLink": {
+    "content": "View on explorer.zksync.io"
+  },
+  "chip": {
+    "proposalType": {
+      "critical": "Critical",
+      "fastTrack": "Fast track"
+    }
+  },
+  "claimReward": {
+    "claimButton": {
+      "disabledLabel": "Select groups to collect reward from",
+      "enabledLabel": "Claim"
+    },
+    "modal": {
+      "title": "Claim reward"
+    },
+    "openModalButton": {
+      "label": "Claim rewards"
+    },
+    "successfulTransactionModal": {
+      "message": "You successfully claimed your reward",
+      "title": "Your claim was successful"
+    }
+  },
+  "connectButton": {
+    "title": "Connect wallet"
+  },
+  "connectWallet": {
+    "connectButton": "Connect wallet"
+  },
+  "convertVrt": {
+    "connectWalletToWithdrawXvs": "Please connect your wallet to withdraw XVS",
+    "convert": "Convert",
+    "infoConversionCompleted": "Completed @ 16:00 on 3.31.23",
+    "internalErrorXvsToVrtConversionRatioUndefined": "xvsToVrtConversionRatio undefined",
+    "successfulConvertTransactionModal": {
+      "title": "Convert submitted successfully"
+    },
+    "withdraw": "Withdraw",
+    "withdrawableAmount": "Withdrawable amount",
+    "withdrawXvs": "Withdraw XVS"
+  },
+  "dashboard": {
+    "allTag": "All",
+    "banner": {
+      "borrowApyChange": "Hello world!"
+    },
+    "borrowMarketTableTitle": "Borrow market",
+    "borrowTabTitle": "Borrow",
+    "connectWalletBanner": {
+      "buttonLabel": "Connect wallet",
+      "description": "Please connect your wallet to see your supplies, borrowings, and open positions.",
+      "illustration": {
+        "alt": "Illustration of a wallet"
+      },
+      "title": "Connect your wallet"
+    },
+    "searchInput": {
+      "placeholder": "Search asset",
+      "placeholderIsolatedPools": "Search asset"
+    },
+    "supplyMarketTableTitle": "Supply market",
+    "supplyTabTitle": "Supply"
+  },
+  "errors": {
+    "somethingWentWrong": "Something went wrong",
+    "somethingWentWrongRetrievingTransactions": "Something went wrong retrieving transactions",
+    "somethingWentWrongRetrievingVoterAccounts": "Something went wrong retrieving voter accounts",
+    "somethingWentWrongRetrievingVoterDetails": "Something went wrong retrieving voter details",
+    "somethingWentWrongRetrievingVoterHistory": "Something went wrong retrieving voter history  ",
+    "undefinedAccountErrorMessage": "Account undefined",
+    "walletNotConnected": "Wallet not connected"
+  },
+  "footer": {
+    "latestNumber": "Latest Block:\u00a0"
+  },
+  "history": {
+    "all": "All",
+    "approval": "Approval",
+    "borrow": "Borrow",
+    "columns": {
+      "amount": "Amount",
+      "block": "Block",
+      "created": "Created",
+      "from": "From",
+      "hash": "Hash",
+      "to": "To",
+      "type": "Type"
+    },
+    "createdAt": "{{ date, distanceToNow }} ago",
+    "deposit": "Deposit",
+    "liquidateBorrow": "Liquidate Borrow",
+    "mint": "Mint",
+    "mintVAI": "Mint VAI",
+    "myTransactions": "My Transactions",
+    "proposalCanceled": "Proposal Canceled",
+    "proposalCreated": "Proposal Created",
+    "proposalExecuted": "Proposal Executed",
+    "proposalQueued": "Proposal Queued",
+    "redeem": "Redeem",
+    "repayBorrow": "Repay Borrow",
+    "repayVAI": "Repay VAI",
+    "reservesAdded": "Reserves Added",
+    "reservesReduced": "Reserves Reduced",
+    "selectLabel": "Type",
+    "transfer": "Transfer",
+    "voteCast": "Vote Cast",
+    "withdraw": "Withdraw"
+  },
+  "interactive": {
+    "copy": {
+      "walletAddress": "Wallet address",
+      "xvsAddress": "XVS address"
+    },
+    "copyToClipboard": "{{name}} copied to clipboard"
+  },
+  "interestRateChart": {
+    "currentUtilizationRateLabelValue": "Current ({{percentage}})",
+    "tooltipItemLabels": {
+      "borrowApy": "Borrow APY",
+      "supplyApy": "Supply APY",
+      "utilizationRate": "Utilization rate"
+    }
+  },
+  "isolatedAssetWarning": {
+    "assetTable": {
+      "assetColumnTitle": "Asset",
+      "borrowApyColumnTitle": "Borrow APY",
+      "liquidityColumnTitle": "Liquidity",
+      "supplyApyColumnTitle": "Supply APY"
+    },
+    "borrowDescription": "This is an isolated token. You may borrow {{tokenSymbol}} according to your collateralized supply in the {{poolName}} pool.",
+    "hideAssetsButtonLabel": "Hide assets",
+    "showMarketsButtonLabel": "Show tokens from the {{poolName}} pool",
+    "supplyDescription": "This is an isolated token. Supplying {{tokenSymbol}} to the {{poolName}} pool will enable you to borrow tokens from this pool exclusively."
+  },
+  "layout": {
+    "claimRewardModal": {
+      "vaultGroup": "{{stakedTokenSymbol}} vault",
+      "vestingVaultGroup": "{{stakedTokenSymbol}} vesting vault"
+    },
+    "menuItems": {
+      "account": "Account",
+      "convertVrt": "Convert VRT",
+      "convertVrtTitle": "Convert VRT to XVS",
+      "dashboard": "Dashboard",
+      "governance": "Governance",
+      "history": "History",
+      "markets": "Markets",
+      "pools": "Pools",
+      "predictions": "Predictions",
+      "swap": "Swap",
+      "vai": "VAI",
+      "vaults": "Vaults",
+      "xvs": "XVS",
+      "gitbook": "Docs",
+      "discord": "Discord",
+      "substack": "Substack"
+    }
+  },
+  "lunaUstWarningModal": {
+    "closeButtonLabel": "Got it",
+    "content": "LUNA and UST have been deprecated, please disable them as collateral to get access to the Zoro protocol again.",
+    "title": "Please disable LUNA and UST as collateral"
+  },
+  "mainPool": {
+    "description": "Zoro's primary pool is composed of large-cap tokens that meet minimum liquidity requirements.",
+    "name": "Zoro Core Pool"
+  },
+  "market": {
+    "availableLiquidity": "Available Liquidity",
+    "borrowButtonLabel": "Borrow",
+    "borrowInfo": {
+      "stats": {
+        "apy": "APY",
+        "distributionApy": "Distribution APY",
+        "totalBorrow": "Total borrow"
+      },
+      "title": "Borrow info"
+    },
+    "interestRateModel": {
+      "title": "Interest Rate Model"
+    },
+    "legends": {
+      "borrowApy": "Borrow APY",
+      "supplyApy": "Supply APY",
+      "utilizationRate": "Utilization rate"
+    },
+    "marketInfo": {
+      "stats": {
+        "borrowCapLabel": "Borrow cap",
+        "borrowerCountLabel": "# of borrowers",
+        "collateralFactorLabel": "Collateral factor",
+        "dailyBorrowingInterestsLabel": "Daily borrowing interests",
+        "dailyDistribution": "Daily {{tokenSymbol}} distributed",
+        "dailySupplyingInterestsLabel": "Daily supplying interests",
+        "exchangeRateLabel": "Exchange rate",
+        "exchangeRateValue": "1 {{tokenSymbol}}={{rate}} {{vTokenSymbol}}",
+        "marketLiquidityLabel": "Market liquidity",
+        "mintedTokensLabel": "{{vTokenSymbol}} minted",
+        "priceLabel": "Price",
+        "reserveFactorLabel": "Reserve factor",
+        "reserveTokensLabel": "Reserves",
+        "supplierCountLabel": "# of suppliers",
+        "supplyCapLabel": "Supply cap",
+        "unlimitedBorrowCap": "Uncapped",
+        "unlimitedSupplyCap": "Uncapped"
+      }
+    },
+    "supplyButtonLabel": "Supply",
+    "supplyInfo": {
+      "stats": {
+        "apy": "APY",
+        "distributionApy": "Distribution APY",
+        "totalSupply": "Total supply"
+      },
+      "title": "Supply info"
+    },
+    "totalBorrow": "Total Borrow",
+    "totalSupply": "Total Supply",
+    "totalTreasury": "Total Treasury"
+  },
+  "markets": {
+    "collateralConfirmModal": {
+      "confirmText": "Confirm the transaction",
+      "disable": "Disable {{asset}} as collateral",
+      "enable": "Enable {{asset}} as collateral"
+    },
+    "errors": {
+      "accountError": "Account Required - Please connect your wallet.",
+      "collateralDisableError": "Collateral Disable Error - There was a problem disabling {{assetName}} as a collateral. Please try again.",
+      "collateralEnableError": "Collateral Enable Error - There was a problem enabling {{assetName}} as a collateral. Please try again.",
+      "collateralRequired": "Collateral Required - Please repay all borrowed assets or set other assets as collateral."
+    }
+  },
+  "marketTable": {
+    "columnKeys": {
+      "asset": "Asset",
+      "borrowApy": "APY",
+      "borrowBalance": "Total borrow",
+      "collateral": "Collateral",
+      "labeledBorrowApy": "Borrow APY",
+      "labeledSupplyApyLtv": "Supply APY / LTV",
+      "liquidity": "Liquidity",
+      "pool": "Pool",
+      "price": "Price",
+      "supplyApyLtv": "APY / LTV",
+      "supplyBalance": "Total supply",
+      "userBorrowBalance": "Balance",
+      "userPercentOfLimit": "% of limit",
+      "userSupplyBalance": "Balance",
+      "userWalletBalance": "Wallet"
+    }
+  },
+  "myAccount": {
+    "safeLimit": "Your safe limit:",
+    "safeLimitTooltip": "{{safeBorrowLimitPercentage}} of your borrow limit. We consider borrowing above this threshold unsafe."
+  },
+  "operationModal": {
+    "borrow": {
+      "aboveBorrowCapWarning": "You can not borrow more than {{userMaxBorrowAmount}} from this pool, as the borrow cap for this market is set at {{assetBorrowCap}} and {{assetBorrowBalance}} are currently being borrowed from it.",
+      "aboveLiquidityWarning": "Insufficient asset liquidity",
+      "aboveSafeLimitWarning": "You entered a high value. There is a risk of liquidation.",
+      "borrowableAmount": "Borrowable amount: <White>{{amount}}</White>",
+      "borrowCapReachedWarning": "The borrow cap of {{assetBorrowCap}} has been reached for this pool. You can not borrow from this market anymore until loans are repaid or its borrow cap is increased.",
+      "connectWalletMessage": "Please connect your wallet to borrow",
+      "enableToken": {
+        "title": "To borrow {{symbol}} from the Venus Protocol, you need to approve it first"
+      },
+      "noCollateralizedSuppliedAssetWarning": "You need to supply tokens and enable them as collateral before you can borrow {{tokenSymbol}} from this pool",
+      "rightMaxButtonLabel": "{{limitPercentage}}% LIMIT",
+      "submitButtonLabel": {
+        "amountHigherThanBorrowableAmount": "Amount entered higher than borrowable amount",
+        "amountHigherThanBorrowCap": "Amount entered higher than borrow cap",
+        "borrow": "Borrow",
+        "borrowCapReached": "Borrow cap reached",
+        "borrowHighRiskAmount": "Borrow at high risk",
+        "enterValidAmount": "Enter a valid amount to borrow"
+      },
+      "successfulTransactionModal": {
+        "message": "You successfully borrowed",
+        "title": "Your borrow was successful"
+      }
+    },
+    "borrowTabTitle": "Borrow",
+    "disabledActionNotice": {
+      "borrow": "Borrowing has been disabled for this token",
+      "repay": "Repaying has been disabled for this token",
+      "supply": "Supplying has been disabled for this token",
+      "withdraw": "Withdrawing has been disabled for this token"
+    },
+    "repay": {
+      "connectWalletMessage": "Please connect your wallet to repay",
+      "currentlyBorrowing": "Currently borrowing",
+      "enableToken": {
+        "title": "To repay {{symbol}} to the Venus Protocol, you need to approve it first"
+      },
+      "fullRepaymentWarning": "The transaction value might be slightly higher than the current borrow amount to cover any newly-accumulated interests",
+      "rightMaxButtonLabel": "MAX",
+      "submitButtonLabel": {
+        "amountHigherThanRepayBalance": "Amount entered higher than repay balance",
+        "enterValidAmount": "Enter a valid amount to repay",
+        "insufficientSwapLiquidity": "Insufficient liquidity in PancakeSwap for this swap",
+        "insufficientWalletBalance": "Insufficient {{tokenSymbol}} balance",
+        "processing": "Processing",
+        "repay": "Repay",
+        "unwrappingUnsupported": "Unwrapping unsupported",
+        "wrappingUnsupported": "Wrapping unsupported"
+      },
+      "successfulTransactionModal": {
+        "message": "You successfully repaid",
+        "title": "Your repayment was successful"
+      },
+      "walletBalance": "Wallet balance: <White>{{balance}}</White>"
+    },
+    "repayTabTitle": "Repay",
+    "supply": {
+      "amountAboveSupplyCapWarning": "You can not supply more than {{userMaxSupplyAmount}} to this pool, as the supply cap for this market is set at {{assetSupplyCap}} and {{assetSupplyBalance}} are currently being supplied to it.",
+      "collateral": "Collateral",
+      "connectWalletMessage": "Please connect your wallet to supply",
+      "enableToken": {
+        "title": "To supply {{symbol}} to the Venus Protocol, you need to approve it first"
+      },
+      "rightMaxButtonLabel": "MAX",
+      "submitButtonLabel": {
+        "amountHigherThanSupplyCap": "Amount entered higher than supply cap",
+        "enterValidAmount": "Enter a valid amount to supply",
+        "insufficientSwapLiquidity": "Insufficient liquidity in PancakeSwap for this swap",
+        "insufficientWalletBalance": "Insufficient {{tokenSymbol}} balance",
+        "processing": "Processing",
+        "supply": "Supply",
+        "supplyCapReached": "Supply cap reached",
+        "unwrappingUnsupported": "Unwrapping unsupported",
+        "wrappingUnsupported": "Wrapping unsupported"
+      },
+      "successfulTransactionModal": {
+        "message": "You successfully supplied",
+        "title": "Your supply was successful"
+      },
+      "supplyCapReachedWarning": "The supply cap of {{assetSupplyCap}} has been reached for this pool. You can not supply to this market anymore until withdraws are made or its supply cap is increased.",
+      "walletBalance": "Wallet balance: <White>{{balance}}</White>"
+    },
+    "supplyTabTitle": "Supply",
+    "swapSummary": {
+      "repay": "You will repay {{toTokenAmount}} using {{fromTokenAmount}}",
+      "supply": "You will supply {{toTokenAmount}} using {{fromTokenAmount}}"
+    },
+    "withdraw": {
+      "connectWalletMessage": "Please connect your wallet to withdraw",
+      "enableToken": {
+        "title": "To withdraw {{symbol}} from the Venus Protocol, you need to approve it first"
+      },
+      "rightMaxButtonLabel": "MAX",
+      "submitButtonLabel": {
+        "enterValidAmount": "Enter a valid amount to withdraw",
+        "higherThanWithdrawableAmount": "Amount entered higher than withdrawable amount",
+        "withdraw": "Withdraw"
+      },
+      "successfulTransactionModal": {
+        "message": "You successfully withdrew",
+        "title": "Your withdrawal was successful"
+      },
+      "withdrawableAmount": "Withdrawable amount: <White>{{amount}}</White>"
+    },
+    "withdrawTabTitle": "Withdraw"
+  },
+  "pagination": {
+    "itemOf": "Item {{currentPageLastIndex}} out of {{itemsCount}}",
+    "itemsOf": "Items {{firstItemNumber}} - {{currentPageLastIndex}} out of {{itemsCount}}"
+  },
+  "pool": {
+    "header": {
+      "assetsLabel": "Assets",
+      "availableLiquidityLabel": "Available Liquidity",
+      "totalBorrowLabel": "Total Borrow",
+      "totalSupplyLabel": "Total Supply"
+    },
+    "isolatedPoolWarning": "You are currently looking at an isolated lending market. Supplying tokens to an isolated lending market will increase your borrow limit for this market only, effectively enabling you to borrow tokens from this market only."
+  },
+  "pools": {
+    "poolTable": {
+      "columns": {
+        "assets": "Assets",
+        "liquidity": "Liquidity",
+        "pool": "Pool",
+        "totalBorrow": "Total borrow",
+        "totalSupply": "Total supply"
+      }
+    }
+  },
+  "select": {
+    "defaultLabel": "Select"
+  },
+  "selectTokenTextField": {
+    "searchInput": {
+      "placeholder": "Search asset"
+    },
+    "walletBalance": "Wallet balance: <White>{{balance}}</White>"
+  },
+  "sidebar": {
+    "newBadge": "NEW"
+  },
+  "stakeModal": {
+    "approveTokenMessage": "To stake {{tokenSymbol}} to this vault, you need to approve it first",
+    "availableTokensLabel": "Available {{tokenSymbol}}",
+    "connectWalletMessage": "Please connect your wallet to stake {{tokenSymbol}}",
+    "submitButtonDisabledLabel": "Enter a valid amount to stake",
+    "submitButtonLabel": "Stake",
+    "successfulTransactionModal": {
+      "description": "You successful staked",
+      "title": "Your stake was successful"
+    },
+    "title": "Stake {{tokenSymbol}}"
+  },
+  "swap": {
+    "errors": {
+      "incorrectSwapInput": "Incorrect input provided for swap"
+    }
+  },
+  "swapDetails": {
+    "exchangeRate": {
+      "label": "Exchange rate",
+      "value": "1 {{fromTokenSymbol}} ≈ {{rate}} {{toTokenSymbol}}"
+    },
+    "receivedAmount": {
+      "estimatedValue": "≈ {{ value }}",
+      "exactValue": "{{ value }}",
+      "repayLabel": "You will repay",
+      "supplyLabel": "You will supply"
+    },
+    "slippageTolerance": {
+      "label": "Slippage tolerance"
+    }
+  },
+  "swapPage": {
+    "connectWalletToSwap": "Please connect your wallet to swap tokens",
+    "exchangeRate": {
+      "label": "Exchange rate",
+      "value": "1 {{fromTokenSymbol}} ≈ {{rate}} {{toTokenSymbol}}"
+    },
+    "fromTokenAmountField": {
+      "label": "From",
+      "max": "Max"
+    },
+    "maximumSold": {
+      "label": "Maximum sold"
+    },
+    "minimumReceived": {
+      "label": "Minimum received"
+    },
+    "slippageTolerance": {
+      "label": "Slippage tolerance"
+    },
+    "submitButton": {
+      "disabledLabels": {
+        "insufficientLiquidity": "Insufficient liquidity for this swap",
+        "insufficientUserBalance": "Insufficient {{tokenSymbol}} balance",
+        "invalidFromTokenAmount": "Enter a valid amount to swap",
+        "unwrappingUnsupported": "Unwrapping unsupported",
+        "wrappingUnsupported": "Wrapping unsupported"
+      },
+      "enabledLabel": "Swap",
+      "processing": "Processing"
+    },
+    "successfulConvertTransactionModal": {
+      "message": "You successfully swapped your tokens",
+      "title": "Your swap was successful"
+    },
+    "toTokenAmountField": {
+      "label": "To"
+    }
+  },
+  "table": {
+    "cardsSelect": {
+      "accessibilityLabel": "Choose an option to sort table rows by",
+      "label": "Sort by"
+    }
+  },
+  "transactionErrors": {
+    "acceptAdminPendingAdminCheck": "Accept Admin Pending Admin Check",
+    "acceptPendingImplementationAddressCheck": "Accept Pending Implementation Address Check",
+    "accrueInterestAccumulatedInterestCalculationFailed": "Accrue Interest Accumulated Interest Calculation Failed",
+    "accrueInterestBorrowRateCalculationFailed": "Accrue Interest Borrow Rate Calculation Failed",
+    "accrueInterestNewBorrowIndexCalculationFailed": "Accrue Interest New Borrow Index Calculation Failed",
+    "accrueInterestNewTotalBorrowsCalculationFailed": "Accrue Interest New Total Borrows Calculation Failed",
+    "accrueInterestNewTotalReservesCalculationFailed": "Accrue Interest New Total Reserves Calculation Failed",
+    "accrueInterestSimpleInterestFactorCalculationFailed": "Accrue Interest Simple Interest Factor Calculation Failed",
+    "addReservesAccrueInterestFailed": "Add Reserves Accrue Interest Failed",
+    "addReservesFreshCheck": "Add Reserves Fresh Check",
+    "addReservesTransferInNotPossible": "Add Reserves Transfer In Not Possible",
+    "badInput": "Bad Input",
+    "borrowAccrueInterestFailed": "Borrow Accrue Interest Failed",
+    "borrowAccumulatedBalanceCalculationFailed": "Borrow Accumulated Balance Calculation Failed",
+    "borrowCashNotAvailable": "Borrow Cash Not Available",
+    "borrowComptrollerRejection": "Borrow Comptroller Rejection",
+    "borrowFreshnessCheck": "Borrow Freshness Check",
+    "borrowMarketNotListed": "Borrow Market Not Listed",
+    "borrowNewAccountBorrowBalanceCalculationFailed": "Borrow New Account Borrow Balance Calculation Failed",
+    "borrowNewTotalBalanceCalculationFailed": "Borrow New Total Balance Calculation Failed",
+    "comptrollerCalculationError": "Comptroller Calculation Error",
+    "comptrollerMismatch": "Comptroller Mismatch",
+    "comptrollerRejection": "Comptroller Rejection",
+    "exitMarketBalanceOwed": "Exit Market Balance Owed",
+    "exitMarketRejection": "Exit Market Rejection",
+    "insufficientBalanceForVai": "Insufficient Balance For Vai",
+    "insufficientLiquidity": "Insufficient Liquidity",
+    "insufficientShortfall": "Insufficient Shortfall",
+    "interestRateModelError": "Interest Rate Model Error",
+    "invalidAccountPair": "Invalid Account Pair",
+    "invalidCloseAmountRequested": "Invalid Close Amount Requested",
+    "invalidCloseFactor": "Invalid Close Factor",
+    "invalidCollateralFactor": "Invalid Collateral Factor",
+    "invalidLiquidationIncentive": "Invalid Liquidation Incentive",
+    "liquidateAccrueBorrowInterestFailed": "Liquidate Accrue BorrowInterest Failed",
+    "liquidateAccrueCollateralInterestFailed": "Liquidate Accrue Collateral Interest Failed",
+    "liquidateCloseAmountIsUintMax": "Liquidate Close Amount Is UINT Max",
+    "liquidateCloseAmountIsZero": "Liquidate Close Amount Is Zero",
+    "liquidateCollateralFreshnessCheck": "Liquidate Collateral Freshness Check",
+    "liquidateComptrollerCalculateAmountSeizeFailed": "Liquidate Comptroller Calculate Amount Seize Failed",
+    "liquidateComptrollerRejection": "Liquidate Comptroller Rejection",
+    "liquidateFreshnessCheck": "Liquidate Freshness Check",
+    "liquidateSeizeBalanceDecrementFailed": "Liquidate Seize Balance Decrement Failed",
+    "liquidateSeizeBalanceIncrementFailed": "Liquidate Seize Balance Increment Failed",
+    "liquidateSeizeBorrowFreshFailed": "Liquidate Seize Borrow Fresh Failed",
+    "liquidateSeizeComptrollerRejection": "Liquidate Seize Comptroller Rejection",
+    "liquidateSeizeIsBorrower": "LiquidateSeizeIsBorrower",
+    "liquidateSeizeLiquidatorIsBorrower": "LiquidateSeizeLiquidatorIsBorrower",
+    "liquidateSeizeTooMuch": "Liquidate Seize Too Much",
+    "marketAlreadyListed": "Market Already Listed",
+    "marketNotEntered": "Market Not Entered",
+    "marketNotFresh": "Market Not Fresh",
+    "marketNotListed": "Market Not Listed",
+    "mathError": "Math Error",
+    "mintAccrueInterestFailed": "Mint Accrue Interest Failed",
+    "mintComptrollerRejection": "Mint Comptroller Rejection",
+    "mintExchangeRateReadFailed": "Mint Exchange Rate Read Failed",
+    "mintFeeCalculationFailed": "Mint Fee Calculation Failed",
+    "mintFreshnessCheck": "Mint Freshness Check",
+    "mintNewAccountBalanceCalculationFailed": "Mint New Account Balance Calculation Failed",
+    "mintNewTotalSupplyCalculationFailed": "Mint New Total Supply Calculation Failed",
+    "mintTransferInFailed": "Mint Transfer In Failed",
+    "mintTransferNotPossible": "Mint Transfer Not Possible",
+    "noError": "No Error",
+    "nonzeroBorrowBalance": "Nonzero Borrow Balance",
+    "priceError": "Price Error",
+    "redeemAccrueInterestFailed": "Redeem Accrue Interest Failed",
+    "redeemComptrollerRejection": "Redeem Comptroller Rejection",
+    "redeemExchangeAmountCalculatioFailed": "Redeem Exchange Amount Calculatio Failed",
+    "redeemExchangeRateReadFailed": "Redeem Exchange Rate Read Failed",
+    "redeemExchangeTokensCalculationFailed": "Redeem Exchange Tokens Calculation Failed",
+    "redeemFeeCalculationFailed": "Redeem Fee Calculation Failed",
+    "redeemFreshnessCheck": "Redeem Freshness Check",
+    "redeemNewAccountBalanceCalculationFailed": "Redeem New Account Balance Calculation Failed",
+    "redeemNewTotalSupplyCalculationFailed": "Redeem New Total Supply Calculation Failed",
+    "redeemTransferOutNotPossible": "Redeem Transfer Out Not Possible",
+    "reduceReservesAccrueInterestFailed": "Reduce Reserves Accrue Interest Failed",
+    "reduceReservesAdminCheck": "Reduce Reserves Admin Check",
+    "reduceReservesCashNotAvailable": "Reduce Reserves Cash Not Available",
+    "reduceReservesFreshCheck": "Reduce Reserves Fresh Check",
+    "reduceReservesValidation": "Reduce Reserves Validation",
+    "rejection": "Rejection",
+    "repayBehalfAccrueInterestFailed": "repay Behalf Accrue Interest Failed",
+    "repayBorrowAccrueInterestFailed": "repay Borrow Accrue Interest Failed",
+    "repayBorrowAccumulatedBalanceCalculationFailed": "Repay Borrow Accumulated Balance Calculation Failed",
+    "repayBorrowComptrollerRejection": "Repay Borrow Comptroller Rejection",
+    "repayBorrowFreshnessCheck": "Repay Borrow Freshness Check",
+    "repayBorrowNewAccountBorrowBalanceCalculationFailed": "Repay Borrow New Account Borrow Balance Calculation Failed",
+    "repayBorrowTransferInNotPossible": "Repay Borrow Transfer In Not Possible",
+    "repayBorrowTransferNotPossible": "Repay Borrow Transfer Not Possible",
+    "repayVaiComptrollerRejection": "repay VAI Comptroller Rejection",
+    "repayVaiFreshnessCheck": "Repay VAI Freshness Check",
+    "setCloseFactorOwnerCheck": "Set Close Factor Owner Check",
+    "setCloseFactorValidation": "Set Close Factor Validation",
+    "setCollateralFactorNoExists": "Set Collateral Factor No Exists",
+    "setCollateralFactorOwnerCheck": "Set Collateral Factor Owner Check",
+    "setCollateralFactorValidation": "Set Collateral Factor Validation",
+    "setCollateralFactorWithoutPrice": "Set Collateral Factor Without Price",
+    "setComptrollerOwnerCheck": "Set Comptroller Owner Check",
+    "setImplementationOwnerCheck": "Set Implementation Owner Check",
+    "setInterestRateModelAccrueInterestFailed": "Set Interest Rate Model Accrue Interest Failed",
+    "setInterestRateModelFreshCheck": "Set Interest Rate Model Fresh Check",
+    "setInterestRateModelOwnerCheck": "Set Interest Rate Model Owner Check",
+    "setLiquidationIncentiveOwnerCheck": "Set Liquidation Incentive Owner Check",
+    "setLiquidationIncentiveValidation": "Set Liquidation Incentive Validation",
+    "setMaxAssetsOwnerCheck": "Set Max Assets Owner Check",
+    "setMintedVaiRejection": "Set Minted VAI Rejection",
+    "setOracleMarketNotListed": "Set Oracle Market Not Listed",
+    "setPauseGuardianOwnerCheck": "Set Pause Guardian Owner Check",
+    "setPendingAdminOwnerCheck": "Set Pending Admin Owner Check",
+    "setPendingImplementationOwnerCheck": "Set Pending Implementation Owner Check",
+    "setPriceOracleOwnerCheck": "Set Price Oracle Owner Check",
+    "setReserveFactorAccrueInterestFailed": "Set Reserve Factor Accrue Interest Failed",
+    "setReserveFactorAdminCheck": "Set Reserve Factor Admin Check",
+    "setReserveFactorBoundsCheck": "Set Reserve Factor Bounds Check",
+    "setReserveFactorFreshCheck": "Set Reserve Factor Fresh Check",
+    "setTreasuryOwnerCheck": "Set Treasury Owner Check",
+    "setVaiControllerOwnerCheck": "Set VAI Controller Owner Check",
+    "setVaiMintRateCheck": "Set VAI Mint Rate Check",
+    "sftMintNewAccountBalanceCalculationFailed": "SFT Mint New Account Balance Calculation Failed",
+    "snapshotError": "Snapshot Error",
+    "supportMarketExists": "Support Market Exists",
+    "supportMarketOwnerCheck": "Support Market Owner Check",
+    "tokenGetUnderlyingPriceError": "Token Get Underlying Price Error",
+    "tokenInsufficentCash": "tokenInsufficent Cash",
+    "tokenInsufficientAllowance": "Token Insufficient Allowance",
+    "tokenInsufficientBalance": "Token Insufficient Balance",
+    "tokenPriceError": "Token Price Error",
+    "tokenTransferInFailed": "Token Transfer In Failed",
+    "tokenTransferOutFailed": "Token Transfer Out Failed",
+    "tooManyAssets": "Too Many Assets",
+    "tooMuchRepay": "Too Much Repay",
+    "transferComptrollerRejection": "Transfer Comptroller Rejection",
+    "transferNotAllowed": "Transfer Not Allowed",
+    "transferNotEnough": "Transfer Not Enough",
+    "transferTooMuch": "Transfer Too Much",
+    "unauthorized": "Unauthorized",
+    "vaiBurnRejection": "VAI Burn Rejection",
+    "vaiLiquidateAccrueBorrowInterestFailed": "VAI Liquidate Accrue Borrow Interest Failed",
+    "vaiLiquidateAccrueCollateralInterestFailed": "VAI Liquidate Accrue Collateral Interest Failed",
+    "vaiLiquidateCloseAmountIsUintMax": "VAI Liquidate Close Amount Is UINT Max",
+    "vaiLiquidateCloseAmountIsZero": "VAI Liquidate Close Amount Is Zero",
+    "vaiLiquidateCollateralFreshnessCheck": "VAI Liquidate Collateral Freshness Check",
+    "vaiLiquidateComptrollerCalculateAmountSeizeFailed": "VAI Liquidate Comptroller Calculate Amount Seize Failed",
+    "vaiLiquidateComptrollerRejection": "VAI Liquidate Comptroller Rejection",
+    "vaiLiquidateFreshnessCheck": "VAI Liquidate Freshness Check",
+    "vaiLiquidateLiquidatorIsBorrower": "VAI LiquidateLiquidatorIsBorrower",
+    "vaiLiquidateRepayBorrowFreshFailed": "VAI Liquidate Repay Borrow Fresh Failed",
+    "vaiLiquidateSeizeBalanceDecrementFailed": "VAI Liquidate Seize Balance Decrement Failed",
+    "vaiLiquidateSeizeBalanceIncrementFailed": "VAI Liquidate Seize Balance Increment Failed",
+    "vaiLiquidateSeizeComptrollerRejection": "VAI Liquidate Seize Comptroller Rejection",
+    "vaiLiquidateSeizeLiquidatorIsBorrower": "VAI Liquidate Seize Liquidator Is Borrower",
+    "vaiLiquidateSeizeTooMuch": "VAI Liquidate Seize Too Much",
+    "vaiMintExchangeCalculationFailed": "VAI Mint Exchange Calculation Failed",
+    "vaiMintRejection": "VAI Mint Rejected"
+  },
+  "vai": {
+    "mintVai": {
+      "approveToken": "To mint VAI with the Venus Protocol, you need to approve it first",
+      "apy": "APY",
+      "connectWallet": "Please connect your wallet to mint VAI",
+      "mintFeeLabel": "Mint fee",
+      "rightMaxButtonLabel": "SAFE MAX",
+      "submitButtonDisabledLabel": "Enter a valid amount to mint",
+      "submitButtonLabel": "Mint",
+      "successfulTransactionModal": {
+        "message": "You successfully minted",
+        "title": "Your mint was successful"
+      },
+      "vaiLimitLabel": "Available VAI limit"
+    },
+    "repayVai": {
+      "approveToken": "To repay VAI to the Venus Protocol, you need to approve it first",
+      "connectWallet": "Please connect your wallet to repay VAI",
+      "fullRepayWarning": "The total repay amount might be slightly higher, due to accrued interests while processing the transaction",
+      "repayFeeLabel": "Repay fee",
+      "repayFeeTooltip": "The amount of interest to be paid when loan is repaid.",
+      "repayVaiBalance": "Repay VAI balance",
+      "repayVaiBalanceTooltip": "Total VAI balance to repay, including interests",
+      "rightMaxButtonLabel": "MAX",
+      "submitButtonDisabledLabel": "Enter a valid amount to repay",
+      "submitButtonLabel": "Repay",
+      "successfulTransactionModal": {
+        "message": "You successfully repaid",
+        "title": "Your repayment was successful"
+      }
+    },
+    "tabMint": "Mint",
+    "tabRepay": "Repay"
+  },
+  "vault": {
+    "transactionForm": {
+      "lockingPeriod": {
+        "duration": "{{date, distanceToNow}}",
+        "label": "Locking period"
+      },
+      "rightMaxButtonLabel": "MAX"
+    }
+  },
+  "vaultItem": {
+    "blockingPendingWithdrawalsWarning": "You must complete pending withdrawals to interact with this vault.",
+    "dailyEmission": "Daily Emission",
+    "stakeButton": "Stake",
+    "stakingApr": "{{stakeTokenName}} Stake APR",
+    "totalStaked": "Total Staked",
+    "withdrawButton": "Withdraw",
+    "youAreStake": "You are staking"
+  },
+  "vote": {
+    "abstain": "Abstain",
+    "addComment": "Add comment",
+    "against": "Against",
+    "comment": "Comment",
+    "createProposalForm": {
+      "abstainOption": "Abstain option",
+      "action": "Action",
+      "actions": "Actions",
+      "addDescription": "Add description",
+      "addOneMoreAction": "+ Add one more action",
+      "address": "Address",
+      "againstOption": "Against option",
+      "confirm": "Confirm",
+      "create": "Create",
+      "description": "Description",
+      "forOption": "For option",
+      "name": "Name",
+      "nextStep": "Next step",
+      "proposalName": "Proposal name",
+      "proposalType": "Proposal type",
+      "signature": "Signature",
+      "submitError": "There was an error creating your proposal",
+      "votingOptions": "Voting options"
+    },
+    "createProposalPlus": "+ Create proposal",
+    "delegate": "Delegate",
+    "delegateAddress": "Delegate address",
+    "delegateLeaderboard": "Delegate leaderboard",
+    "delegateVotes": "Delegate votes",
+    "delegateVoting": "Delegate voting",
+    "delegateYourVoting": "2. <Anchor>Delegate your voting power</Anchor> to yourself or somebody else",
+    "depositXvs": "Deposit XVS",
+    "depositYourTokens": "1. <Link>Deposit your tokens</Link> in the XVS Vault ",
+    "enterContactAddress": "Enter contact address",
+    "for": "For",
+    "goToXvsSnapshot": "Go to XVS Snapshot",
+    "pages": {
+      "actions": "3 of 3 Actions",
+      "confirmation": "Confirmation",
+      "proposalInformation": "1 of 3 Proposal information",
+      "votingOptions": "2 of 3 Voting options"
+    },
+    "pasteYourAddress": "Paste your address",
+    "pleaseAllowTimeForConfirmation": "Please allow a few minutes for your transaction to be confirmed",
+    "pleasePayAttention": "Please pay attention",
+    "proposals": "Proposals",
+    "proposalType": {
+      "critical": "Critical",
+      "fastTrack": "Fast track",
+      "normal": "Normal"
+    },
+    "redelegate": "Redelegate",
+    "redelegateVoting": "Redelegate voting",
+    "requiredVotingPower": "You need to have 300k voting power to create a proposal",
+    "successfulDelegationModal": {
+      "message": "You successfully delegated",
+      "title": "Your delegation was successful"
+    },
+    "summaryProgressBar": "Vote Summary Progress Bar - {{voteType}}",
+    "theProposalWasCancelled": "The proposal was cancelled",
+    "theProposalWasExecuted": "The proposal was executed",
+    "theProposalWasQueued": "The proposal was queued",
+    "totalLocked": "Total locked",
+    "toVoteYouShould": "To vote you should:",
+    "voteAbstain": "Vote abstain",
+    "voteAgainst": "Vote against",
+    "voteFor": "Vote for",
+    "votingPower": "Voting power",
+    "votingWallet": "Voting wallet",
+    "votingWeight": "Voting weight",
+    "youCanDelegateVotes": "You can delegate votes to yourself or somebody else. If you know the address you wish to delegate to, enter it below. If not, you can view the Delegate Leaderboard to find a political party you wish to support",
+    "youDelegatedTo": "You delegated your locked tokens to {{delegate}}",
+    "yourProposalwasCreatedSuccessfully": "Your proposal was created successfully",
+    "youSuccessfullyVotedAbstained": "You successfully abstained from voting on the proposal",
+    "youSuccessfullyVotedAgainstTheProposal": "You successfully voted against the proposal",
+    "youSuccessfullyVotedForTheProposal": "You successfully voted for the proposal"
+  },
+  "voteProposalUi": {
+    "activeUntilDate": "Active until: <Date>{{ date, dd MMM yyyy h:mm a }}</Date>",
+    "cancel": "Cancel",
+    "cancelledDate": "Cancelled: <Date>{{ date, dd MMM yyyy h:mm a }}</Date>",
+    "countdownFormat": {
+      "daysIncluded": "{{days}}d {{hours}}h : {{minutes}}m : {{seconds}}s",
+      "hoursIncluded": "{{hours}}h : {{minutes}}m : {{seconds}}s",
+      "minutesIncluded": "{{minutes}}m : {{seconds}}s",
+      "secondsIncluded": "{{seconds}}s"
+    },
+    "defeatedDate": "Defeated: <Date>{{ date, dd MMM yyyy h:mm a }}</Date>",
+    "description": "Description",
+    "execute": "Execute",
+    "executedDate": "Executed: <Date>{{ date, dd MMM yyyy h:mm a }}</Date>",
+    "operation": "Operation",
+    "proposalHistory": "Proposal History",
+    "proposalState": {
+      "active": "Active",
+      "activeTimestamp": "Active since: <Span>{{date, dd MMM yyyy HH:mm}}</Span>",
+      "canceled": "Canceled",
+      "canceledTimestamp": "Canceled: <Span>{{date, dd MMM yyyy HH:mm}}</Span>",
+      "defeated": "Defeated",
+      "defeatedTimestamp": "Defeated: <Span>{{date, dd MMM yyyy HH:mm}}</Span>",
+      "executed": "Executed",
+      "executedTimestamp": "Executed: <Span>{{date, dd MMM yyyy HH:mm}}</Span>",
+      "expired": "Expired",
+      "expiredTimestamp": "Expired: <Span>{{date, dd MMM yyyy HH:mm}}</Span>",
+      "passed": "Passed",
+      "queued": "Queued",
+      "queuedTimestamp": "Queued: <Span>{{date, dd MMM yyyy HH:mm}}</Span>",
+      "succeededTimestamp": "Succeeded: <Span>{{date, dd MMM yyyy HH:mm}}</Span>"
+    },
+    "queue": "Queue",
+    "queuedUntilDate": "Queued until: <Date>{{ date, dd MMM yyyy h:mm a }}</Date>",
+    "statusCard": {
+      "active": "Active",
+      "ariaLabelAbstain": "votes abstain",
+      "ariaLabelAgainst": "votes against",
+      "ariaLabelFor": "votes for",
+      "canceled": "Canceled",
+      "cancelled": "Cancelled",
+      "created": "Created",
+      "dateOnly": "{{date, dd MMM yyyy}}",
+      "defeated": "Defeated",
+      "execute": "Execute",
+      "executed": "Executed",
+      "expired": "Expired",
+      "pending": "Pending",
+      "queue": "Queue",
+      "queued": "Queued",
+      "readyToQueue": "Ready to queue",
+      "succeed": "Succeed",
+      "timeOnly": "{{date, h:mm a}}"
+    },
+    "timeUntilExecutable": "Time until executable",
+    "voteStatus": {
+      "abstained": "Abstained",
+      "notVoted": "Not voted",
+      "votedAgainst": "Voted against",
+      "votedFor": "Voted for"
+    },
+    "votingOptions": "Voting options"
+  },
+  "voterDetail": {
+    "actions": "Actions",
+    "amount": "Amount",
+    "delegated": "Delegated",
+    "delegatingTo": "Delegating to",
+    "holding": "Holding",
+    "readableSent": "{{date, distanceToNow}} ago",
+    "receivedXvs": "Received XVS",
+    "sent": "Sent",
+    "sentXvs": "Sent XVS",
+    "transactions": "Transactions",
+    "undelegated": "Undelegated",
+    "venusBalance": "Venus balance",
+    "viewAll": "View all",
+    "votedAbstain": "Voted abstain",
+    "votedAgainst": "Voted against",
+    "votedFor": "Voted for",
+    "votes": "Votes",
+    "votingHistory": "Voting history"
+  },
+  "voterLeaderboard": {
+    "addressesByVotingWeight": "Addresses by Voting Weight",
+    "columns": {
+      "proposalsVoted": "Proposals Voted",
+      "rank": "Rank",
+      "votes": "Votes",
+      "voteWeight": "Vote Weight"
+    }
+  },
+  "voteSummary": {
+    "addresses_zero": "{{count}} address",
+    "addresses_one": "{{count}} address",
+    "addresses_other": "{{count}} addresses",
+    "votes": "Votes"
+  },
+  "wallets": {
+    "binanceChainWallet": "Binance Chain Wallet",
+    "bitKeep": "BitKeep",
+    "braveWallet": "Brave Wallet",
+    "coinbaseWallet": "Coinbase Wallet",
+    "errors": {
+      "authorizeAccess": "You need to authorize access to your account",
+      "noProvider": "If you are connecting an external wallet, make sure you have a provider such as MetaMask or compatible wallet such as Brave",
+      "unsupportedWallet": "Unable to connect. Make sure your selection matches your desired wallet."
+    },
+    "infinityWallet": "Infinity Wallet",
+    "ledger": "Ledger",
+    "metamask": "MetaMask",
+    "okxWallet": "OKX Wallet",
+    "opera": "Opera Wallet",
+    "safePal": "SafePal",
+    "trustWallet": "Trust Wallet",
+    "walletConnect": "WalletConnect"
+  },
+  "withdrawFromVaiVaultModal": {
+    "availableTokensLabel": "Available {{tokenSymbol}}",
+    "connectWalletMessage": "Please connect your wallet to withdraw {{tokenSymbol}}",
+    "submitButtonDisabledLabel": "Enter a valid amount to withdraw",
+    "submitButtonLabel": "Withdraw",
+    "successfulTransactionModal": {
+      "description": "You successful withdrew",
+      "title": "Your withdrawal was successful"
+    },
+    "title": "Withdraw {{tokenSymbol}}"
+  },
+  "withdrawFromVestingVaultModalModal": {
+    "displayWithdrawalRequestListButton": "Withdrawal request list",
+    "requestWithdrawalTab": {
+      "approveToken": {
+        "connectWalletMessage": "Please connect your wallet to withdraw"
+      },
+      "availableTokensLabel": "Requestable {{tokenSymbol}}",
+      "displayWithdrawalRequestListButton": "Withdrawal request list",
+      "submitButtonDisabledLabel": "Enter a valid amount to request",
+      "submitButtonLabel": "Request withdrawal",
+      "successfulTransactionDescription": "You successfully requested a withdrawal of",
+      "successfulTransactionTitle": "Your withdrawal request was successful"
+    },
+    "requestWithdrawalTabTitle": "Request withdrawal",
+    "title": "Withdraw {{tokenSymbol}}",
+    "withdrawalRequestList": {
+      "approveToken": {
+        "connectWalletMessage": "Please connect your wallet to see your withdrawal requests"
+      },
+      "emptyState": "You have no active withdrawal requests",
+      "itemContent": "Locked until {{date, dd.MM.yy h:mm a}}"
+    },
+    "withdrawalRequestListTitle": "Withdrawal request list",
+    "withdrawTab": {
+      "approveToken": {
+        "connectWalletMessage": "Please connect your wallet to withdraw"
+      },
+      "availableTokens": "Available {{tokenSymbol}}",
+      "submitButton": "Withdraw"
+    },
+    "withdrawTabTitle": "Withdraw"
+  },
+  "xvs": {
+    "columns": {
+      "asset": "Asset",
+      "borrowXvsApy": "Borrow XVS APY",
+      "supplyXvsApy": "Supply XVS APY",
+      "xvsPerDay": "XVS Per Day"
+    },
+    "dailyDistribution": "Daily Distribution:",
+    "progressBar": "Xvs Distribution progress",
+    "remaining": "Remaining:"
+  },
+  "xvsPage": {
+    "isolatedAssetsWarning": "Isolated assets are not included on this page"
+  }
+}

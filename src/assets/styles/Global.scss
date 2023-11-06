@@ -1,0 +1,417 @@
+:root {
+  /* Common styles */
+  --color-black: #000;
+  --color-blue: #dfbe52;
+
+  /* Background colors */
+  --color-bg-main: #0d0801;
+  --color-bg-primary: rgba(22, 27, 39, 1);
+  --color-bg-active: rgba(32, 39, 56, 1);
+
+  /* Typography colors */
+  --color-text-main: rgba(255, 255, 255, 1);
+  --color-text-secondary: #979692;
+  --color-text-inactive: rgba(161, 161, 161, 1);
+  --color-text-red: rgba(233, 61, 102, 1);
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/proximaNova/proximaNovaRegularIt.woff2") format("woff2"),
+    url("../fonts/proximaNova/proximaNovaRegularIt.woff") format("woff"),
+    url("../fonts/proximaNova/proximaNovaRegularIt.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/proximaNova/proximaNovaRegular.woff2") format("woff2"),
+    url("../fonts/proximaNova/proximaNovaRegular.woff") format("woff"),
+    url("../fonts/proximaNova/proximaNovaRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/proximaNova/proximaNovaSemiboldIt.woff2") format("woff2"),
+    url("../fonts/proximaNova/proximaNovaSemiboldIt.woff") format("woff"),
+    url("../fonts/proximaNova/proximaNovaSemiboldIt.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/proximaNova/proximaNovaSemibold.woff2") format("woff2"),
+    url("../fonts/proximaNova/proximaNovaSemibold.woff") format("woff"),
+    url("../fonts/proximaNova/proximaNovaSemibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/proximaNova/proximaNovaBold.woff2") format("woff2"),
+    url("../fonts/proximaNova/proximaNovaBold.woff") format("woff"),
+    url("../fonts/proximaNova/proximaNovaBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/proximaNova/proximaNovaBoldIt.woff2") format("woff2"),
+    url("../fonts/proximaNova/proximaNovaBoldIt.woff") format("woff"),
+    url("../fonts/proximaNova/proximaNovaBoldIt.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+body {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-family: "ProximaNova", sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  background-color: var(--color-bg-main);
+  color: var(--color-text-main);
+}
+
+a,
+span,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0;
+}
+
+i {
+  font-style: normal;
+}
+.searchbar-wrap div > div {
+  border-radius: 30px;
+}
+.custom-sidebar-wrap > div {
+  padding: 0 15px;
+}
+.custom-sidebar-wrap {
+  ul {
+    margin-top: 15px;
+    li {
+      margin-bottom: 10px;
+    }
+  }
+}
+.sidebar-logo {
+  justify-content: start !important;
+}
+.connect-wallet-card-wrap {
+  background-image: url(./../img/card-bg-img.jpg) !important;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  p {
+    margin-bottom: 20px;
+  }
+}
+header {
+  border-bottom: 1px #281f0d solid;
+}
+.header-wrap > {
+  div {
+    padding: 20px 0 20px !important;
+    max-width: 1566px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+.custom-loader {
+  svg {
+    path {
+      stroke: #dfbe52;
+    }
+  }
+}
+.custom-sidebar-wrap > div {
+  width: inherit;
+}
+.header-wrap {
+  border-radius: 0 !important;
+}
+
+.d-align-space-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.all-markets-main-wrap {
+  .search-data {
+    margin-left: auto;
+  }
+}
+body button {
+  background-size: 300% 100%;
+  background: #dfbe52;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  transition: 0.5s all;
+}
+// body button:hover {
+//   background-image: linear-gradient(114deg, #ecaf54 0%, #e9bc11 100%);
+//   /* background: #c9a01bb3;
+//   border-color: transparent;
+//   color: var(--white-color); */
+//   background-position: 100% 0;
+//   moz-transition: all 0.4s ease-in-out;
+//   -o-transition: all 0.4s ease-in-out;
+//   -webkit-transition: all 0.4s ease-in-out;
+//   transition: all 0.4s ease-in-out;
+// }
+// body button:hover:not(:disabled),
+.css-jlqav6{
+  color : #A62828 !important;
+}
+
+body .css-167zanq-LinkButton:hover:not(:disabled) {
+  background-image: linear-gradient(114deg, #ecaf54 0%, #e9bc11 100%);
+  background-color: #dfbe52 !important;
+  border-color: #dfbe52 !important;
+}
+
+body button:active:not(:disabled){
+  background-position: 100% 0;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  background-image: linear-gradient(114deg, #ecaf54 0%, #e9bc11 100%);
+  background-color: #dfbe52 !important;
+  border-color: #dfbe52 !important;
+}
+
+.active-menu-item svg,
+.active-menu-item p {
+  color: #000 !important;
+}
+
+.active-menu-item:hover {
+  background-image: linear-gradient(114deg, #ecaf54 0%, #e9bc11 100%);
+}
+// button.active,
+body .custom-btn-wrap,
+body .inner-custom-btn-wrap button,
+body .MAX,
+body .LIMIT {
+  background-color: #dfbe52 !important;
+  border-color: #dfbe52 !important;
+}
+body .custom-btn-swap {
+  background-color: #1E1305;
+  border-color: #1E1305;
+  color: #fff;
+}
+body .custom-btn-swap.active,
+body .custom-btn-swap.active:hover,
+body .custom-btn-swap.active:hover:not(:disabled){
+  background-color: #dfbe52;
+ border-color: #dfbe52;
+ color: #000;
+}
+
+body .custom-btn-swap:hover,
+body .custom-btn-swap:hover:not(:disabled){
+  background-color: #2A200D;
+  border-color: #2A200D;
+  color: unset;
+}
+body .custom-btn-wrap:hover,
+body .custom-btn-wrap:hover:not(:disabled){
+  background-image: linear-gradient(114deg, #ecaf54 0%, #e9bc11 100%);
+  background-color: #dfbe52 !important;
+  border-color: #dfbe52 !important;
+}
+
+body .css-1ilalnq-Button {
+  background-color: #dfbe52;
+  border-color: #dfbe52;
+}
+
+body .MuiSwitch-thumb{
+  background-color: #FFFFFF !important;
+}
+body .MuiSwitch-track,
+body .Mui-checked .MuiSwitch-track{
+  background-color: #482C05 !important;
+  opacity: 1 !important;
+}
+body .Mui-checked .MuiSwitch-thumb{
+  background-color: #dfbe52 !important;
+}
+body .MuiModal-root .modal-close-btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #37290D !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: unset !important;
+    margin-top: 0;
+    transform: translateY(-50%);
+
+}
+body .MuiModal-root .modal-close-btn svg{
+  width: 20px;
+  height: 20px;
+  color: #fff;
+}
+body .MuiModal-root .modal-close-btn:hover{
+  background-color: #dfbe52 !important;
+}
+.transcationgraphics-logo-img{
+  max-width: 80%;
+  width: 100%;
+  height: auto;
+}
+.transcation-coin-modal .voting-spinner path{
+  fill: #dfbe52;
+}
+.Toastify button,
+.Toastify button:focus,
+.Toastify button:active,
+.Toastify button:focus-visible,
+.Toastify button:focus-within{
+  width: 20px !important;
+  height: 20px !important;
+  border-radius: 100%;
+  top: 20px !important;
+}
+.active-menu-item span{
+  color: var(--color-black);
+}
+::selection{
+  background-color: #6A561C;
+  color: #FFFFFF;
+}
+body .mobile-menu button ,body .custom-sidebar-wrap 
+ + div .custom-btn-wrap{
+  width: max-content;
+}
+body .mobile-menu button svg{
+  width: 16px;
+  height: 16px;
+}
+@media (max-width: 1799px) {
+  body .dashboard-main,
+  .header-wrap > div {
+    max-width: 1320px;
+  }
+}
+@media (max-width: 1679px) {
+  body .dashboard-main,
+  .header-wrap > div {
+    max-width: 1220px;
+  }
+}
+@media (max-width: 1599px) {
+  body .dashboard-main,
+  .header-wrap > div {
+    max-width: 1086px;
+  }
+}
+@media (max-width: 1439px) {
+  body .dashboard-main,
+  .header-wrap > div {
+    max-width: 90%;
+  }
+}
+@media (max-width: 1365px) {
+  body .markets-table-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 1279px) {
+  .all-markets-main-wrap {
+    margin-bottom: 30px;
+    .search-data {
+      width: auto;
+      min-width: 300px;
+    }
+  }
+  .custom-sidebar-wrap ul li a {
+    margin: unset;
+  }
+  .custom-sidebar-wrap {
+    .sidebar-menu-logo-option-list-wrap {
+      width: auto;
+      .sidebar-logo {
+        padding: 0;
+        .medium-screen-logo-wrap {
+          width: 50px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 991px) {
+  body .header-wrap button {
+    display: none;
+  }
+  body .header-wrap {
+    padding: 0 24px;
+    border-bottom: 0;
+    > div {
+      padding: 0 !important;
+    }
+  }
+  body .dashboard-main,
+  .header-wrap > div {
+    max-width: 100%;
+  }
+  .connect-wallet-card-wrap {
+    background-size: cover;
+  }
+  .all-markets-main-wrap {
+    .search-data {
+      min-width: auto;
+      > div {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  body {
+    .header-wrap > {
+      div > {
+        h1 {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+  .connect-wallet-card-wrap button {
+    height: auto;
+    width: max-content;
+  }
+}
+@media (max-width: 349px) {
+  body h4 {
+    font-size: 16px;
+  }
+}
