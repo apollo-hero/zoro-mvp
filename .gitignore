@@ -2,14 +2,13 @@
 
 # compiled output
 /dist
-/build
 /dist-server
 /tmp
 /out-tsc
 .env
 # dependencies
 /node_modules
-/build
+# /build
 yarn-error.log
 # IDEs and editors
 /.idea
@@ -58,3 +57,5 @@ storybook-static
 
 # Version in package.json exposed to the dApp
 /src/constants/version.ts
+
+*.zip

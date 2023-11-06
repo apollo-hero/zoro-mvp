@@ -57,11 +57,15 @@ export const SidebarUi: React.FC = () => {
                 css={styles.listItem}
                 disableRipple
               >
-                <Link href={menuItem.href}>
+                <Link href={menuItem.href} target={menuItem?.target}>
                   <div className="left-border" />
 
                   <ListItemIcon css={styles.listItemIcon}>
-                    <Icon name={menuItem.icon} />
+                    {
+                      menuItem?.svgIcon ?
+                        menuItem?.svgIcon :
+                        (<Icon name={menuItem.icon} />)
+                    }
                   </ListItemIcon>
 
                   <Typography variant="body2" css={styles.listItemText}>
@@ -129,17 +133,21 @@ export const SidebarUi: React.FC = () => {
           </div>
 
           <List>
-            {menuItems.map(({ href, icon, i18nKey, isNew }) => (
+            {menuItems.map(({ href, icon, i18nKey, isNew, svgIcon,target }) => (
               <ListItemButton
                 key={i18nKey}
                 component="li"
                 css={[styles.listItem, styles.mobileListItem]}
                 disableRipple
               >
-                <Link onClick={closeMenu} href={href}>
+                <Link onClick={closeMenu} href={href} target={target}>
                   <div css={styles.mobileLabel}>
                     <ListItemIcon css={styles.listItemIcon}>
-                      <Icon name={icon} />
+                      {
+                        svgIcon ?
+                          svgIcon :
+                          (<Icon name={icon} />)
+                      }
                     </ListItemIcon>
 
                     <Typography

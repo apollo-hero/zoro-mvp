@@ -316,6 +316,64 @@ body .mobile-menu button svg{
   width: 16px;
   height: 16px;
 }
+.bn-demo-button {
+  border-radius: 30px;
+  padding: 8px 24px;
+  height: 48px;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+}
+.sidebar.svelte-obaru3 {
+  background-color: #160e03 !important;
+  border-color: #160e03 !important;
+}
+
+.tooltip-details-wrap .d-align {
+  display: flex;
+  align-items: center;
+  grid-gap: 10px;
+}
+.d-align-gap {
+  display: flex;
+  align-items: center;
+  grid-gap: 10px;
+}
+.d-align-gap span {
+  line-height: 0;
+  cursor: pointer;
+}
+.MuiTooltip-tooltip {
+  border-radius: 20px;
+  background: linear-gradient(180deg, #4b3e1a 0%, #21190a 86.02%, #000 166.96%);
+  padding: 24px !important;
+}
+.tooltip-details-wrap h4 {
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  margin-bottom: 0;
+}
+.tooltip-details-wrap p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  margin: 10px 0 0;
+}
+.w-max-content {
+  width: max-content;
+}
+.mt-space-30 {
+  margin-top: 30px;
+}
 @media (max-width: 1799px) {
   body .dashboard-main,
   .header-wrap > div {
