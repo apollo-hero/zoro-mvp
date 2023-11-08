@@ -1,25 +1,24 @@
 /** @jsxImportSource @emotion/react */
-import React from 'react';
-import { useTranslation } from 'translation';
-import { truncateAddress } from 'utilities';
-
-import { useAuth } from 'context/AuthContext';
-
-import { ButtonProps, SecondaryButton } from '../../Button';
-import { ApproveToken } from 'components';
-
+import { ButtonProps, SecondaryButton } from "../../Button";
+import { useConnectWallet } from "@web3-onboard/react";
+import { ApproveToken } from "components";
 // TESTING
-import { TOKENS  } from 'constants/tokens';
+import { TOKENS } from "constants/tokens";
+import { useAuth } from "context/AuthContext";
+import React from "react";
+import { useTranslation } from "translation";
+import { truncateAddress } from "utilities";
 
 export interface ConnectButtonProps extends ButtonProps {
   accountAddress?: string;
+  onClick: any;
 }
-      //<ApproveToken
-        //token={TOKENS.usdc}
-        //spenderAddress={TOKENS.usdt.address}
-      //>
-      //test approve USDC
-      //</ApproveToken></div>
+//<ApproveToken
+//token={TOKENS.usdc}
+//spenderAddress={TOKENS.usdt.address}
+//>
+//test approve USDC
+//</ApproveToken></div>
 
 export const ConnectButtonUi: React.FC<ConnectButtonProps> = ({
   accountAddress,
@@ -28,25 +27,27 @@ export const ConnectButtonUi: React.FC<ConnectButtonProps> = ({
   const { t } = useTranslation();
 
   return (
-    <SecondaryButton {...otherProps} className='custom-btn-wrap'>
-      {!accountAddress ? t('connectButton.title') : truncateAddress(accountAddress)}
+    <SecondaryButton {...otherProps} className="custom-btn-wrap">
+      {!accountAddress
+        ? t("connectButton.title")
+        : truncateAddress(accountAddress)}
     </SecondaryButton>
   );
 };
 
-export const ConnectButton: React.FC<ButtonProps> = props => {
+export const ConnectButton: React.FC<ButtonProps> = (props) => {
+  const [{ wallet, connecting }, connect, disconnect] = useConnectWallet();
   const { accountAddress, openAuthModal } = useAuth();
+
   return (
-      <ConnectButtonUi
+    <ConnectButtonUi
       accountAddress={accountAddress}
-      onClick={openAuthModal}
-      variant={accountAddress ? 'secondary' : 'primary'}
+      onClick={wallet ? openAuthModal : async () => await connect()}
+      variant={wallet ? "secondary" : "primary"}
       {...props}
-      className='custom-btn-wrap'
-      />
-
-
-      );
+      className="custom-btn-wrap"
+    />
+  );
 };
 
 export default ConnectButton;

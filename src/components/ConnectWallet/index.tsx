@@ -3,6 +3,8 @@ import React from 'react';
 import { useTranslation } from 'translation';
 
 import { useAuth } from 'context/AuthContext';
+import { useConnectWallet } from "@web3-onboard/react";
+
 
 import { SecondaryButton } from '../Button';
 import { NoticeInfo } from '../Notice';
@@ -24,6 +26,7 @@ export const Prompt: React.FC<PromptProps> = ({
 }) => {
   const styles = useStyles();
   const { t } = useTranslation();
+  const [{ wallet, connecting }, connect, disconnect] = useConnectWallet();
 
   // Render prompt if user aren't connected with any wallet
   if (connected) {
@@ -33,7 +36,7 @@ export const Prompt: React.FC<PromptProps> = ({
     <div css={styles.container} className={className}>
       <NoticeInfo css={styles.notice} description={message} />
 
-      <SecondaryButton fullWidth onClick={openAuthModal} className='custom-btn-wrap'>
+      <SecondaryButton fullWidth onClick={wallet ? openAuthModal : async () => await connect()} className='custom-btn-wrap'>
         {t('connectWallet.connectButton')}
       </SecondaryButton>
     </div>

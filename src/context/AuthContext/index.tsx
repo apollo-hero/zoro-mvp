@@ -1,11 +1,17 @@
-import { openInfinityWallet } from '@infinitywallet/infinity-connector';
-import type { Provider } from '@wagmi/core';
-import config from 'config';
-import { VError } from 'errors';
-import { Signer, getDefaultProvider } from 'ethers';
-import noop from 'noop-ts';
-import React, { useCallback, useContext, useEffect } from 'react';
-import { useTranslation } from 'translation';
+import { openInfinityWallet } from "@infinitywallet/infinity-connector";
+import type { Provider } from "@wagmi/core";
+import { useConnectWallet } from "@web3-onboard/react";
+import useGetIsAddressAuthorized from "clients/api/queries/getIsAddressAuthorized/useGetIsAddressAuthorized";
+import { Connector, connectorIdByName } from "clients/web3";
+import { AuthModal } from "components/AuthModal";
+import config from "config";
+import { VError } from "errors";
+import { Signer, getDefaultProvider } from "ethers";
+//import { logError } from 'context/ErrorLogger';
+import useCopyToClipboard from "hooks/useCopyToClipboard";
+import noop from "noop-ts";
+import React, { useCallback, useContext, useEffect } from "react";
+import { useTranslation } from "translation";
 import {
   ConnectorNotFoundError,
   useAccount,
@@ -14,13 +20,8 @@ import {
   useNetwork,
   useProvider,
   useSigner,
-} from 'wagmi';
+} from "wagmi";
 
-import useGetIsAddressAuthorized from 'clients/api/queries/getIsAddressAuthorized/useGetIsAddressAuthorized';
-import { Connector, connectorIdByName } from 'clients/web3';
-import { AuthModal } from 'components/AuthModal';
-//import { logError } from 'context/ErrorLogger';
-import useCopyToClipboard from 'hooks/useCopyToClipboard';
 //import { isRunningInInfinityWalletApp } from 'utilities/walletDetection';
 
 export interface AuthContextValue {
@@ -39,7 +40,7 @@ export const AuthContext = React.createContext<AuthContextValue>({
   openAuthModal: noop,
   closeAuthModal: noop,
   provider: getDefaultProvider(),
-  accountAddress: '',
+  accountAddress: "",
 });
 
 export const AuthProvider: React.FC = ({ children }) => {
@@ -50,26 +51,28 @@ export const AuthProvider: React.FC = ({ children }) => {
   const provider = useProvider();
   const { address, isConnected } = useAccount();
   const { chain } = useNetwork();
+  const [{ wallet, connecting }, connect, disconnect] = useConnectWallet();
 
   //const { data: accountAuth } = useGetIsAddressAuthorized(address || '', {
-    //enabled: address !== undefined,
+  //enabled: address !== undefined,
   //});
 
   // Set address as authorized by default
   //const isAuthorizedAddress = !accountAuth || accountAuth.authorized;
   const isAuthorizedAddress = true;
-  const accountAddress = isConnected && !!signer && address && isAuthorizedAddress ? address : '';
+  const accountAddress = wallet ? wallet.accounts[0].address : "";
 
   const login = useCallback(async (connectorId: Connector) => {
     // If user is attempting to connect their Infinity wallet but the dApp
     // isn't currently running in the Infinity Wallet app, open it
     //if (connectorId === Connector.InfinityWallet && !isRunningInInfinityWalletApp()) {
-      //openInfinityWallet(window.location.href, config.chainId);
-      //return;
+    //openInfinityWallet(window.location.href, config.chainId);
+    //return;
     //}
 
     const connector =
-      connectors.find(item => item.id === connectorIdByName[connectorId]) || connectors[0];
+      connectors.find((item) => item.id === connectorIdByName[connectorId]) ||
+      connectors[0];
 
     try {
       // Log user in
@@ -90,19 +93,13 @@ export const AuthProvider: React.FC = ({ children }) => {
   // Disconnect wallet if it's connected to the wrong network. Note: ideally
   // we'd instead switch the network automatically, but this seems to cause
   // issues with certain wallets such as MetaMask
-  useEffect(() => {
-    const fn = async () => {
-      if (!!accountAddress && chain && chain.id !== config.chainId) {
-        await logOut();
-      }
-    };
-
-    fn();
-  }, [chain?.id, accountAddress]);
+  useEffect(() => {}, [wallet]);
 
   const { t } = useTranslation();
 
-  const copyWalletAddress = useCopyToClipboard(t('interactive.copy.walletAddress'));
+  const copyWalletAddress = useCopyToClipboard(
+    t("interactive.copy.walletAddress")
+  );
 
   const openAuthModal = () => setIsAuthModalOpen(true);
   const closeAuthModal = () => setIsAuthModalOpen(false);
@@ -128,7 +125,7 @@ export const AuthProvider: React.FC = ({ children }) => {
         isOpen={isAuthModalOpen}
         onClose={closeAuthModal}
         accountAddress={accountAddress}
-        onLogOut={logOut}
+        onLogOut={async () => {await disconnect(wallet); closeAuthModal();}}
         onLogin={handleLogin}
         onCopyAccountAddress={copyWalletAddress}
       />

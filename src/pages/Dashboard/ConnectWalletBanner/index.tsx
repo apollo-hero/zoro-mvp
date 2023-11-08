@@ -7,6 +7,8 @@ import { PrimaryButton } from "components";
 import { useAuth } from "context/AuthContext";
 import React from "react";
 import { useTranslation } from "translation";
+import { useConnectWallet } from "@web3-onboard/react";
+
 
 export interface ConnectWalletBannerUiProps {
   isWalletConnected: boolean;
@@ -20,6 +22,7 @@ export const ConnectWalletBannerUi: React.FC<ConnectWalletBannerUiProps> = ({
 }) => {
   const { t } = useTranslation();
   const styles = useStyles();
+  const [{ wallet, connecting }, connect, disconnect] = useConnectWallet();
 
   if (isWalletConnected) {
     return null;
@@ -40,7 +43,7 @@ export const ConnectWalletBannerUi: React.FC<ConnectWalletBannerUiProps> = ({
           {t("dashboard.connectWalletBanner.description")}
         </Typography>
 
-        <PrimaryButton css={styles.button} onClick={openAuthModal} className="custom-btn-wrap">
+        <PrimaryButton css={styles.button} onClick={wallet ? openAuthModal : async () => await connect()} className="custom-btn-wrap">
           {t("dashboard.connectWalletBanner.buttonLabel")}
         </PrimaryButton>
       </div>
