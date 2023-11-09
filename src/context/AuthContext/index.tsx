@@ -6,7 +6,7 @@ import { Connector, connectorIdByName } from "clients/web3";
 import { AuthModal } from "components/AuthModal";
 import config from "config";
 import { VError } from "errors";
-import { Signer, getDefaultProvider } from "ethers";
+import { Signer, getDefaultProvider, ethers } from "ethers";
 //import { logError } from 'context/ErrorLogger';
 import useCopyToClipboard from "hooks/useCopyToClipboard";
 import noop from "noop-ts";
@@ -47,8 +47,11 @@ export const AuthProvider: React.FC = ({ children }) => {
   const [isAuthModalOpen, setIsAuthModalOpen] = React.useState(false);
   const { connectors, connectAsync } = useConnect();
   const { disconnectAsync } = useDisconnect();
-  const { data: signer } = useSigner();
-  const provider = useProvider();
+  // const { data: signer } = useSigner();
+  // const provider = useProvider();
+  const provider = new ethers.providers.Web3Provider(window.ethereum);
+  const signer = provider.getSigner();
+  
   const { address, isConnected } = useAccount();
   const { chain } = useNetwork();
   const [{ wallet, connecting }, connect, disconnect] = useConnectWallet();
