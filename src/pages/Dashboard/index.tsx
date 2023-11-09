@@ -1,4 +1,5 @@
 /** @jsxImportSource @emotion/react */
+import alertImg from "./../../assets/img/alert.png";
 import ConnectWalletBanner from "./ConnectWalletBanner";
 import { useStyles } from "./styles";
 import TEST_IDS from "./testIds";
@@ -21,7 +22,6 @@ import React, { InputHTMLAttributes, useMemo, useState } from "react";
 import { useTranslation } from "translation";
 import { Pool } from "types";
 import { isFeatureEnabled } from "utilities";
-import alertImg from "./../../assets/img/alert.png";
 
 interface DashboardUiProps {
   searchValue: string;
@@ -111,10 +111,10 @@ export const DashboardUi: React.FC<DashboardUiProps> = ({
             title={
               <>
                 <div className="tooltip-details-wrap">
-                  <div className="d-align">
+                  {/* <div className="d-align">
                     <h4>Core pools are risky</h4>
                     <img src={alertImg} />
-                  </div>
+                  </div> */}
                   <p>
                     Assets in isolated pools cannot be used as collateral. When
                     you borrow an isolated asset, you cannot borrow other
@@ -288,7 +288,7 @@ export const DashboardUi: React.FC<DashboardUiProps> = ({
             }
             arrow
           >
-            <span>
+            {/* <span>
               <svg
                 width="24"
                 height="24"
@@ -308,7 +308,8 @@ export const DashboardUi: React.FC<DashboardUiProps> = ({
                   </clipPath>
                 </defs>
               </svg>
-            </span>
+            </span> */}
+            <img src={alertImg} />
           </Tooltip>
         </div>
       </div>
