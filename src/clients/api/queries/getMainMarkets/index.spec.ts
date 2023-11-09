@@ -22,7 +22,7 @@ const supportedMarket = {
   collateralFactor: '800000000000000000',
   exchangeRate: '212011549336411',
   liquidity: '9999999996006906047.3323137876',
-  name: 'Venus USDC',
+  name: 'Zoro USDC',
   reserveFactor: '100000000000000000',
   supplierCount: 629,
   supplierDailyVenus: '499999996800000000000',

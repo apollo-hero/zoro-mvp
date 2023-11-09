@@ -157,7 +157,7 @@ const useGetMenuItems = () => {
       // },
 
       // {
-      // href: 'https://prdt.finance/Application/Pro/BSC?partnerCode=Venus',
+      // href: 'https://prdt.finance/Application/Pro/BSC?partnerCode=Zoro',
       // // Translation key: do not remove this comment
       // // t('layout.menuItems.predictions')
       // i18nKey: 'layout.menuItems.predictions',

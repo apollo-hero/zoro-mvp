@@ -212,7 +212,7 @@ exports[`api/queries/useGetPool > returns the correct asset 1`] = `
     "comptrollerAddress": "0x94d1820b2d1c7c7452a163983dc888cec546b77d",
     "description": "Fake description 1",
     "isIsolated": false,
-    "name": "Venus",
+    "name": "Zoro",
     "userBorrowBalanceCents": "12333",
     "userBorrowLimitCents": "192673",
     "userSupplyBalanceCents": "123879865",

@@ -16,7 +16,7 @@ export default {
 
 export const Disabled = () => (
   <ApproveTokenUi
-    title="To withdraw XVS to the Venus Protocol, you need to approve it first."
+    title="To withdraw XVS to the Zoro Protocol, you need to approve it first."
     token={TOKENS.xvs}
     isTokenApproved={false}
     approveToken={async () => fakeContractReceipt}
@@ -27,7 +27,7 @@ export const Disabled = () => (
 
 export const DisabledWithTokenInfo = () => (
   <ApproveTokenUi
-    title="To withdraw USDC to the Venus Protocol, you need to approve it first."
+    title="To withdraw USDC to the Zoro Protocol, you need to approve it first."
     token={TOKENS.usdc}
     isTokenApproved={false}
     assetInfo={[

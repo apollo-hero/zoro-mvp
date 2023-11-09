@@ -20,7 +20,7 @@ exports[`component/Layout/Header/Breadcrumbs > outputs the right DOM based on th
 
 exports[`component/Layout/Header/Breadcrumbs > outputs the right DOM based on the current path: /pools 1`] = `"Pools"`;
 
-exports[`component/Layout/Header/Breadcrumbs > outputs the right DOM based on the current path: /pools/pool/0x3d759121234cd36F8124C21aFe1c6852d2bEd848 1`] = `"Pools/Venus"`;
+exports[`component/Layout/Header/Breadcrumbs > outputs the right DOM based on the current path: /pools/pool/0x3d759121234cd36F8124C21aFe1c6852d2bEd848 1`] = `"Pools/Zoro"`;
 
 exports[`component/Layout/Header/Breadcrumbs > outputs the right DOM based on the current path: /swap 1`] = `"Swap"`;
 

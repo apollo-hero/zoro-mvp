@@ -56,7 +56,7 @@
   },
   "announcements": {
     "bethUpdate": {
-      "description": "Binance paused BETH withdrawals on 2023-04-26. We recommend users reduce their exposure to BETH on Venus. Borrowing has been paused. Convert BETH to WBETH on-chain at a 1:1 ratio <Link>here</Link>."
+      "description": "Binance paused BETH withdrawals on 2023-04-26. We recommend users reduce their exposure to BETH on Zoro. Borrowing has been paused. Convert BETH to WBETH on-chain at a 1:1 ratio <Link>here</Link>."
     },
     "sxpDisabling": {
       "description": "Following recommendation from Gauntlet, borrow and supply for SXP has been paused given concerns around SXP migrating to a new chain and expected decline in SXP liquidity."
@@ -401,7 +401,7 @@
       "borrowCapReachedWarning": "The borrow cap of {{assetBorrowCap}} has been reached for this pool. You can not borrow from this market anymore until loans are repaid or its borrow cap is increased.",
       "connectWalletMessage": "Please connect your wallet to borrow",
       "enableToken": {
-        "title": "To borrow {{symbol}} from the Venus Protocol, you need to approve it first"
+        "title": "To borrow {{symbol}} from the Zoro Protocol, you need to approve it first"
       },
       "noCollateralizedSuppliedAssetWarning": "You need to supply tokens and enable them as collateral before you can borrow {{tokenSymbol}} from this pool",
       "rightMaxButtonLabel": "{{limitPercentage}}% LIMIT",
@@ -429,7 +429,7 @@
       "connectWalletMessage": "Please connect your wallet to repay",
       "currentlyBorrowing": "Currently borrowing",
       "enableToken": {
-        "title": "To repay {{symbol}} to the Venus Protocol, you need to approve it first"
+        "title": "To repay {{symbol}} to the Zoro Protocol, you need to approve it first"
       },
       "fullRepaymentWarning": "The transaction value might be slightly higher than the current borrow amount to cover any newly-accumulated interests",
       "rightMaxButtonLabel": "MAX",
@@ -455,7 +455,7 @@
       "collateral": "Collateral",
       "connectWalletMessage": "Please connect your wallet to supply",
       "enableToken": {
-        "title": "To supply {{symbol}} to the Venus Protocol, you need to approve it first"
+        "title": "To supply {{symbol}} to the Zoro Protocol, you need to approve it first"
       },
       "rightMaxButtonLabel": "MAX",
       "submitButtonLabel": {
@@ -484,7 +484,7 @@
     "withdraw": {
       "connectWalletMessage": "Please connect your wallet to withdraw",
       "enableToken": {
-        "title": "To withdraw {{symbol}} from the Venus Protocol, you need to approve it first"
+        "title": "To withdraw {{symbol}} from the Zoro Protocol, you need to approve it first"
       },
       "rightMaxButtonLabel": "MAX",
       "submitButtonLabel": {
@@ -771,7 +771,7 @@
   },
   "vai": {
     "mintVai": {
-      "approveToken": "To mint VAI with the Venus Protocol, you need to approve it first",
+      "approveToken": "To mint VAI with the Zoro Protocol, you need to approve it first",
       "apy": "APY",
       "connectWallet": "Please connect your wallet to mint VAI",
       "mintFeeLabel": "Mint fee",
@@ -785,7 +785,7 @@
       "vaiLimitLabel": "Available VAI limit"
     },
     "repayVai": {
-      "approveToken": "To repay VAI to the Venus Protocol, you need to approve it first",
+      "approveToken": "To repay VAI to the Zoro Protocol, you need to approve it first",
       "connectWallet": "Please connect your wallet to repay VAI",
       "fullRepayWarning": "The total repay amount might be slightly higher, due to accrued interests while processing the transaction",
       "repayFeeLabel": "Repay fee",
@@ -974,7 +974,7 @@
     "sentXvs": "Sent XVS",
     "transactions": "Transactions",
     "undelegated": "Undelegated",
-    "venusBalance": "Venus balance",
+    "venusBalance": "Zoro balance",
     "viewAll": "View all",
     "votedAbstain": "Voted abstain",
     "votedAgainst": "Voted against",
