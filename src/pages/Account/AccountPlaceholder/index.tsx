@@ -25,7 +25,7 @@ const AccountPlaceholder: React.FC = () => {
       <Typography css={styles.placeholderText} variant="h4">
         {t('accountPlaceholder.assetsWillAppearHere')}
       </Typography>
-      <LinkButton to={routes.dashboard.path} className='custom-btn-wrap'>{t('accountPlaceholder.letsGetStarted')}</LinkButton>
+      {/* <LinkButton to={routes.dashboard.path} className='custom-btn-wrap'>{t('accountPlaceholder.letsGetStarted')}</LinkButton> */}
     </div>
   );
 };
