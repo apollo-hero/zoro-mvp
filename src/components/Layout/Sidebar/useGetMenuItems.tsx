@@ -60,6 +60,24 @@ const useGetMenuItems = () => {
             icon: "market",
           }
     );
+    menuItems.push(
+      {
+        href: ZORO_GITBOOK_URL,
+        // Translation key: do not remove this comment
+        // t('layout.menuItems.gitbook')
+        i18nKey: "layout.menuItems.gitbook",
+        icon: "gitbook",
+        target: true,
+      },
+      {
+        href: ZORO_DISCORD_URL,
+        // Translation key: do not remove this comment
+        // t('layout.menuItems.discord')
+        i18nKey: "layout.menuItems.discord",
+        icon: "discord",
+        target: true,
+      }
+    );
     menuItems.push({
       href: ZORO_LIQUIDATOR_URL,
       // Translation key: do not remove this comment
@@ -101,24 +119,6 @@ const useGetMenuItems = () => {
       ),
       target: false,
     });
-    menuItems.push(
-      {
-        href: ZORO_GITBOOK_URL,
-        // Translation key: do not remove this comment
-        // t('layout.menuItems.gitbook')
-        i18nKey: "layout.menuItems.gitbook",
-        icon: "gitbook",
-        target: true,
-      },
-      {
-        href: ZORO_DISCORD_URL,
-        // Translation key: do not remove this comment
-        // t('layout.menuItems.discord')
-        i18nKey: "layout.menuItems.discord",
-        icon: "discord",
-        target: true,
-      }
-    );
 
     menuItems
       .push

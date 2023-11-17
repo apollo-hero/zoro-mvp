@@ -21,11 +21,11 @@ import { MuiThemeProvider } from "theme/MuiThemeProvider";
 const injected = injectedModule();
 const coinbase = coinbaseModule();
 const walletConnect = walletConnectModule({
-  projectId: "c826cc8b51ab490042469f6b032cb9a5",
+  projectId: "0f87fc2cf39e518bda94e227dc61150d",
   dappUrl: "http://app.zoroprotocol.com/",
 });
 const ledger = ledgerModule({
-  projectId: "c826cc8b51ab490042469f6b032cb9a5"
+  projectId: "0f87fc2cf39e518bda94e227dc61150d"
 });
 const trust = trustModule();
 const trezorOptions = {
