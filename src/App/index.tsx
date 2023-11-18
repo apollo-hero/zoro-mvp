@@ -51,7 +51,7 @@ const web3Onboard = init({
   appMetadata: {
     name: 'ZORO',
     icon,
-    description: 'liquidator'
+    description: 'Main App'
   },
   theme: "dark",
 });
