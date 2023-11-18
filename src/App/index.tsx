@@ -17,6 +17,7 @@ import { QueryClientProvider } from "react-query";
 import { HashRouter } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import { MuiThemeProvider } from "theme/MuiThemeProvider";
+import icon from '../assets/img/Logo-01.svg';
 
 const injected = injectedModule();
 const coinbase = coinbaseModule();
@@ -47,6 +48,11 @@ const chains = [
 const web3Onboard = init({
   wallets,
   chains,
+  appMetadata: {
+    name: 'ZORO',
+    icon,
+    description: 'liquidator'
+  },
   theme: "dark",
 });
 
