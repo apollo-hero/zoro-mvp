@@ -1,3 +1,4 @@
+import icon from "../assets/img/Logo-01.svg";
 import Switch from "./Switch";
 import coinbaseModule from "@web3-onboard/coinbase";
 import injectedModule from "@web3-onboard/injected-wallets";
@@ -17,7 +18,6 @@ import { QueryClientProvider } from "react-query";
 import { HashRouter } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import { MuiThemeProvider } from "theme/MuiThemeProvider";
-import icon from '../assets/img/Logo-01.svg';
 
 const injected = injectedModule();
 const coinbase = coinbaseModule({ darkMode: true });
@@ -26,7 +26,7 @@ const walletConnect = walletConnectModule({
   dappUrl: "http://app.zoroprotocol.com/",
 });
 const ledger = ledgerModule({
-  projectId: "0f87fc2cf39e518bda94e227dc61150d"
+  projectId: "0f87fc2cf39e518bda94e227dc61150d",
 });
 const trust = trustModule();
 const trezorOptions = {
@@ -49,9 +49,9 @@ const web3Onboard = init({
   wallets,
   chains,
   appMetadata: {
-    name: 'ZORO',
+    name: "ZORO",
     icon,
-    description: 'Main App'
+    description: "Main App",
   },
   theme: "dark",
 });
