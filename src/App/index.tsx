@@ -20,7 +20,7 @@ import { MuiThemeProvider } from "theme/MuiThemeProvider";
 import icon from '../assets/img/Logo-01.svg';
 
 const injected = injectedModule();
-const coinbase = coinbaseModule();
+const coinbase = coinbaseModule({ darkMode: true });
 const walletConnect = walletConnectModule({
   projectId: "0f87fc2cf39e518bda94e227dc61150d",
   dappUrl: "http://app.zoroprotocol.com/",
