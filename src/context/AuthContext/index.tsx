@@ -1,6 +1,6 @@
 import { openInfinityWallet } from "@infinitywallet/infinity-connector";
 import type { Provider } from "@wagmi/core";
-import { useConnectWallet } from "@web3-onboard/react";
+import { useConnectWallet, useSetChain } from "@web3-onboard/react";
 import useGetIsAddressAuthorized from "clients/api/queries/getIsAddressAuthorized/useGetIsAddressAuthorized";
 import { Connector, connectorIdByName } from "clients/web3";
 import { AuthModal } from "components/AuthModal";
@@ -55,48 +55,52 @@ export const AuthProvider: React.FC = ({ children }) => {
   const { address, isConnected } = useAccount();
   const { chain } = useNetwork();
   const [{ wallet, connecting }, connect, disconnect] = useConnectWallet();
+  const [{ connectedChain }, setChain] = useSetChain();
 
   //const { data: accountAuth } = useGetIsAddressAuthorized(address || '', {
-  //enabled: address !== undefined,
-  //});
-
-  // Set address as authorized by default
-  //const isAuthorizedAddress = !accountAuth || accountAuth.authorized;
-  const isAuthorizedAddress = true;
-  const accountAddress = wallet ? wallet.accounts[0].address : "";
-
-  const login = useCallback(async (connectorId: Connector) => {
-    // If user is attempting to connect their Infinity wallet but the dApp
-    // isn't currently running in the Infinity Wallet app, open it
+    //enabled: address !== undefined,
+    //});
+    
+    // Set address as authorized by default
+    //const isAuthorizedAddress = !accountAuth || accountAuth.authorized;
+    const isAuthorizedAddress = true;
+    const accountAddress = wallet ? wallet.accounts[0].address : "";
+    
+    const login = useCallback(async (connectorId: Connector) => {
+      // If user is attempting to connect their Infinity wallet but the dApp
+      // isn't currently running in the Infinity Wallet app, open it
     //if (connectorId === Connector.InfinityWallet && !isRunningInInfinityWalletApp()) {
-    //openInfinityWallet(window.location.href, config.chainId);
-    //return;
-    //}
-
-    const connector =
+      //openInfinityWallet(window.location.href, config.chainId);
+      //return;
+      //}
+      
+      const connector =
       connectors.find((item) => item.id === connectorIdByName[connectorId]) ||
       connectors[0];
-
-    try {
-      // Log user in
-      await connectAsync({ connector, chainId: config.chainId });
-    } catch (error) {
-      if (error instanceof ConnectorNotFoundError) {
-        //throw new VError({ type: 'interaction', code: 'noProvider' });
-      } else {
-        //logError(error);
-      }
+      
+      try {
+        // Log user in
+        await connectAsync({ connector, chainId: config.chainId });
+      } catch (error) {
+        if (error instanceof ConnectorNotFoundError) {
+          //throw new VError({ type: 'interaction', code: 'noProvider' });
+        } else {
+          //logError(error);
+        }
     }
   }, []);
-
+  
   const logOut = useCallback(async () => {
     await disconnectAsync();
   }, []);
-
+  
   // Disconnect wallet if it's connected to the wrong network. Note: ideally
   // we'd instead switch the network automatically, but this seems to cause
   // issues with certain wallets such as MetaMask
   useEffect(() => {}, [wallet]);
+  useEffect(() => {
+    if (connectedChain?.id !== '0x118') setChain({ chainId: '0x118' });
+  }, connectedChain);
 
   const { t } = useTranslation();
 
