@@ -4,7 +4,7 @@ import { Token, VToken } from 'types';
 import { areTokensEqual, getContractAddress } from 'utilities';
 //import { areTokensEqual, getContractAddress, getSwapRouterContractAddress } from 'utilities';
 
-import { chain, provider } from 'clients/web3';
+// import { chain, provider } from 'clients/web3';
 import erc20Abi from 'constants/contracts/abis/erc20.json';
 import comptrollerAbi from 'constants/contracts/abis/comptroller.json';
 //import governorBravoDelegateAbi from 'constants/contracts/abis/governorBravoDelegate.json';
