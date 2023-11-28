@@ -92,9 +92,9 @@ export const AuthProvider: React.FC = ({ children }) => {
   useEffect(() => {
     if (
       typeof connectedChain?.id !== "undefined" &&
-      connectedChain?.id !== "0x118"
+      connectedChain?.id !== "0x1"
     )
-      setChain({ chainId: "0x118" });
+      setChain({ chainId: "0x1" });
   }, [connectedChain]);
 
   const { t } = useTranslation();

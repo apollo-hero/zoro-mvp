@@ -36,12 +36,21 @@ const trezorOptions = {
 const trezor = trezorModule(trezorOptions);
 const wallets = [injected, trust, coinbase, walletConnect, ledger, trezor];
 
+// const chains = [
+//   {
+//     id: "0x118",
+//     token: "ETH",
+//     label: "zkSync Era Testnet RPC",
+//     rpcUrl: `https://testnet.era.zksync.dev	`,
+//   },
+// ];
+
 const chains = [
   {
-    id: "0x118",
+    id: "0x1",
     token: "ETH",
-    label: "zkSync Era Testnet RPC",
-    rpcUrl: `https://testnet.era.zksync.dev	`,
+    label: "Ethereum",
+    rpcUrl: `https://rpc.mevblocker.io`,
   },
 ];
 
