@@ -12,7 +12,7 @@ import { Icon } from "../../Icon";
 const Header: React.FC = () => {
   const [close, setClose] = useState(false);
   const styles = useStyles();
-  const geolocation = useContext(GeolocationContext);
+  const { geolocation } = useContext(GeolocationContext);
   const onClickClose = () => {
     setClose(true);
   }
