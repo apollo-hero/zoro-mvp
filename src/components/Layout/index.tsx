@@ -12,11 +12,10 @@ export const Layout: React.FC = ({ children }) => {
 
   return (
     <div css={styles.layout}>
-       <Sidebar /> 
+      <Sidebar /> 
 
       <Box display="flex" flexDirection="column" flex="1">
-         <Header /> 
-
+        <Header /> 
         <PageContainer>{children}</PageContainer>
       </Box>
     </div>

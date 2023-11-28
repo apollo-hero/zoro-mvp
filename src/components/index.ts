@@ -1,6 +1,5 @@
 export * from './AuthModal';
 export * from './Button';
-export * from './Layout';
 export * from './Spinner';
 export * from './Modal';
 export * from './Icon';

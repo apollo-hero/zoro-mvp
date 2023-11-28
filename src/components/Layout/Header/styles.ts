@@ -5,6 +5,27 @@ export const useStyles = () => {
   const theme = useTheme();
 
   return {
+    notifyBar: css`
+      width: 100%;
+      background-color: black;
+      color: white;
+      font-size: 16px;
+      padding: 5px 15px;
+      box-shadow: 0 0 2px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      `,
+    notifyText: css`
+      margin: 0px;
+    `,
+    notifyClose: css`
+      border: 1px solid white;
+      cursor: pointer;
+    `,
+    hide: css`
+      display: none;
+    `,
     appBar: css`
       background-image: none;
       background-color: transparent;
