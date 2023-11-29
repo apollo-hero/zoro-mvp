@@ -16,12 +16,9 @@ const GeolocationProvider: React.FC = ({ children }) => {
   useEffect(() => {
     const fetchGeolocation = async () => {
       try {
-        const response = await fetch(
-          "https://cors-anywhere.herokuapp.com/https://api.myip.com",
-          { headers: { Origin: "https://cors-anywhere.herokuapp.com" } }
-        );
-        const { cc } = await response.json();
-        setGeolocation(BlockedRegions.includes(cc));
+        const response = await fetch(`https://pro.ip-api.com/json?key=${import.meta.env.VITE_FF_IPAPI_KEY}`);
+        const { countryCode } = await response.json();
+        setGeolocation(BlockedRegions.includes(countryCode));
       } catch (error) {
         console.error("Error fetching geolocation:", error);
       }
