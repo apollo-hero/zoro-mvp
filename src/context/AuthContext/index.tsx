@@ -28,7 +28,12 @@ export const AuthContext = React.createContext<AuthContextValue>({
 
 export const AuthProvider: React.FC = ({ children }) => {
   const [isAuthModalOpen, setIsAuthModalOpen] = React.useState(false);
-  const provider = new ethers.providers.JsonRpcProvider("https://bsc-dataseed.binance.org");
+  let provider = null;
+  if (window.ethereum) {
+    provider = new ethers.providers.Web3Provider(window.ethereum);
+  } else {
+    provider = new ethers.providers.JsonRpcProvider("https://eth.llamarpc.com");
+  }
   const signer = provider.getSigner();
 
   const [{ wallet, connecting }, connect, disconnect] = useConnectWallet();
@@ -75,7 +80,7 @@ export const AuthProvider: React.FC = ({ children }) => {
         logOut,
         openAuthModal,
         closeAuthModal,
-        provider,
+        provider: provider || undefined,
         signer: signer || undefined,
       }}
     >

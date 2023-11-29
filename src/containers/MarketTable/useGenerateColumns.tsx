@@ -97,7 +97,11 @@ const useGenerateColumns = ({
                 value={poolAsset.isCollateralOfUser}
               />
             ) : (
-              PLACEHOLDER_KEY
+              <Toggle
+                onChange={() => collateralOnChange(poolAsset)}
+                value={poolAsset.isCollateralOfUser}
+              />
+              // PLACEHOLDER_KEY     // collateral slide toggle for each coin on supply side
             );
           }
 
