@@ -14,9 +14,9 @@ const GeolocationProvider: React.FC = ({ children }) => {
   useEffect(() => {
     const fetchGeolocation = async () => {
       try {
-        const response = await fetch('http://ip-api.com/json');
-        const { countryCode } = await response.json();
-        setGeolocation(BlockedRegions.includes(countryCode));
+        const response = await fetch('https://api.myip.com');
+        const { cc } = await response.json();
+        setGeolocation(BlockedRegions.includes(cc));
       } catch (error) {
         console.error('Error fetching geolocation:', error);
       }
