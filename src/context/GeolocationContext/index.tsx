@@ -1,12 +1,14 @@
-import React, { createContext, useEffect, useState } from 'react';
+import React, { createContext, useEffect, useState } from "react";
 
 export interface GeolocationContextValue {
   geolocation: boolean;
 }
 
-const BlockedRegions = ['US', 'CU', 'IR', 'RU', 'SR', 'KP'];
+const BlockedRegions = ["US", "CU", "IR", "RU", "SR", "KP"];
 
-const GeolocationContext = createContext<GeolocationContextValue>({geolocation: false});
+const GeolocationContext = createContext<GeolocationContextValue>({
+  geolocation: false,
+});
 
 const GeolocationProvider: React.FC = ({ children }) => {
   const [geolocation, setGeolocation] = useState(false);
@@ -14,11 +16,14 @@ const GeolocationProvider: React.FC = ({ children }) => {
   useEffect(() => {
     const fetchGeolocation = async () => {
       try {
-        const response = await fetch('https://api.myip.com');
+        const response = await fetch(
+          "https://cors-anywhere.herokuapp.com/https://api.myip.com",
+          { headers: { Origin: "https://cors-anywhere.herokuapp.com" } }
+        );
         const { cc } = await response.json();
         setGeolocation(BlockedRegions.includes(cc));
       } catch (error) {
-        console.error('Error fetching geolocation:', error);
+        console.error("Error fetching geolocation:", error);
       }
     };
 
@@ -26,7 +31,7 @@ const GeolocationProvider: React.FC = ({ children }) => {
   }, []);
 
   return (
-    <GeolocationContext.Provider value={{geolocation}}>
+    <GeolocationContext.Provider value={{ geolocation }}>
       {children}
     </GeolocationContext.Provider>
   );
