@@ -1072,5 +1072,6 @@
   },
   "xvsPage": {
     "isolatedAssetsWarning": "Isolated assets are not included on this page"
-  }
+  },
+  "blockedRegion": "Restricted from blocked regions"
 }

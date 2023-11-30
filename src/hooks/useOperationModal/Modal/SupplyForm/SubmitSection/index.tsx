@@ -2,11 +2,12 @@
 import SwapSummary from "../../SwapSummary";
 import { FormError } from "../useForm/types";
 import { ApproveTokenSteps, PrimaryButton } from "components";
-import React, { useMemo } from "react";
+import React, { useContext, useMemo } from "react";
 import { useTranslation } from "translation";
 import { Swap, Token } from "types";
 //import { areTokensEqual, getSwapRouterContractAddress } from 'utilities';
 import { areTokensEqual } from "utilities";
+import { GeolocationContext } from "context/GeolocationContext";
 
 export interface SubmitSectionProps {
   isFormValid: boolean;
@@ -32,8 +33,13 @@ export const SubmitSection: React.FC<SubmitSectionProps> = ({
   isSwapLoading,
 }) => {
   const { t } = useTranslation();
+  const { geolocation } = useContext(GeolocationContext);
 
   const submitButtonLabel = useMemo(() => {
+    if (geolocation) {
+      return t("blockedRegion");
+    }
+
     if (isSwapLoading && Number(fromTokenAmountTokens) > 0) {
       return t("operationModal.supply.submitButtonLabel.processing");
     }
@@ -99,6 +105,7 @@ export const SubmitSection: React.FC<SubmitSectionProps> = ({
             type="submit"
             loading={isFormSubmitting}
             disabled={
+              geolocation ||
               !isFormValid ||
               isFormSubmitting ||
               isSwapLoading ||

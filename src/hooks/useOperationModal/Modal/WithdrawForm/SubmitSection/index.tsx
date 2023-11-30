@@ -1,9 +1,9 @@
 /** @jsxImportSource @emotion/react */
 import { FormError } from "../useForm/types";
 import { PrimaryButton } from "components";
-import React, { useMemo } from "react";
+import React, { useContext, useMemo } from "react";
 import { useTranslation } from "translation";
-
+import { GeolocationContext } from "context/GeolocationContext";
 export interface SubmitSectionProps {
   isFormValid: boolean;
   isFormSubmitting: boolean;
@@ -18,8 +18,13 @@ export const SubmitSection: React.FC<SubmitSectionProps> = ({
   formError,
 }) => {
   const { t } = useTranslation();
+  const { geolocation } = useContext(GeolocationContext);
 
   const submitButtonLabel = useMemo(() => {
+    if(geolocation) {
+      return t("blockedRegion");
+    }
+
     if (!isFormSubmitting && formError === "HIGHER_THAN_WITHDRAWABLE_AMOUNT") {
       return t(
         "operationModal.withdraw.submitButtonLabel.higherThanWithdrawableAmount"
@@ -37,7 +42,7 @@ export const SubmitSection: React.FC<SubmitSectionProps> = ({
     <PrimaryButton
       type="submit"
       loading={isFormSubmitting}
-      disabled={!isFormValid || isFormSubmitting}
+      disabled={geolocation || !isFormValid || isFormSubmitting}
       fullWidth
       className="custom-btn-wrap"
     >

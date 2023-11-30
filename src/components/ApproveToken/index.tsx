@@ -13,9 +13,10 @@ import { useAuth } from "context/AuthContext";
 import { VError, formatVErrorToReadableString } from "errors";
 import { ContractReceipt } from "ethers";
 import useTokenApproval from "hooks/useTokenApproval";
-import React from "react";
+import React, { useContext } from "react";
 import { useTranslation } from "translation";
 import { Token } from "types";
+import { GeolocationContext } from "context/GeolocationContext";
 
 export interface ApproveTokenUiProps {
   token: Token;
@@ -41,6 +42,7 @@ export const ApproveTokenUi: React.FC<ApproveTokenUiProps> = ({
 }) => {
   const { t } = useTranslation();
   const styles = useStyles();
+  const { geolocation } = useContext(GeolocationContext);
 
   if (isTokenApproved) {
     return <>{children}</>;
@@ -87,13 +89,13 @@ export const ApproveTokenUi: React.FC<ApproveTokenUiProps> = ({
           )}
 
           <SecondaryButton
-            disabled={disabled || isApproveTokenLoading}
+            disabled={geolocation || disabled || isApproveTokenLoading}
             loading={isApproveTokenLoading}
             fullWidth
             onClick={handleApproveToken}
             className="custom-btn-wrap"
           >
-            {t("approveToken.approveButtonLabel")}
+            {geolocation? t("blockedRegion"): t("approveToken.approveButtonLabel")}
           </SecondaryButton>
         </>
       )}

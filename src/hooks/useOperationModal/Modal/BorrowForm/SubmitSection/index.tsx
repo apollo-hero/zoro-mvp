@@ -3,9 +3,9 @@ import { FormError } from "../useForm/types";
 import { useStyles } from "./styles";
 import BigNumber from "bignumber.js";
 import { PrimaryButton } from "components";
-import React, { useMemo } from "react";
+import React, { useContext, useMemo } from "react";
 import { useTranslation } from "translation";
-
+import { GeolocationContext } from "context/GeolocationContext";
 export interface SubmitSectionProps {
   isFormValid: boolean;
   isFormSubmitting: boolean;
@@ -23,6 +23,7 @@ export const SubmitSection: React.FC<SubmitSectionProps> = ({
 }) => {
   const { t } = useTranslation();
   const styles = useStyles();
+  const { geolocation } = useContext(GeolocationContext);
 
   const isHighRiskBorrow = useMemo(
     () =>
@@ -33,6 +34,10 @@ export const SubmitSection: React.FC<SubmitSectionProps> = ({
   );
 
   const submitButtonLabel = useMemo(() => {
+    if (geolocation) {
+      return t("blockedRegion");
+    }
+
     if (!isFormSubmitting && formError === "BORROW_CAP_ALREADY_REACHED") {
       return t("operationModal.borrow.submitButtonLabel.borrowCapReached");
     }
@@ -71,7 +76,7 @@ export const SubmitSection: React.FC<SubmitSectionProps> = ({
       css={styles.getSubmitButton({ isHighRiskBorrow })}
       type="submit"
       loading={isFormSubmitting}
-      disabled={!isFormValid || isFormSubmitting}
+      disabled={geolocation || !isFormValid || isFormSubmitting}
       fullWidth
       className="custom-btn-wrap"
     >

@@ -20,7 +20,7 @@ const Header: React.FC = () => {
   return (
     <>    
       {geolocation && <div css={close? styles.hide : styles.notifyBar}>
-        <p css={styles.notifyText}>Your region is restricted to use our website.</p>
+        <p css={styles.notifyText}>Your are accessing the app from a blocked region</p>
         <Icon name="close" css={styles.notifyClose} onClick={onClickClose}/>
       </div>}
       <AppBar position="relative" css={styles.appBar} className="header-wrap">

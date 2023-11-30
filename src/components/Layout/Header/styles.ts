@@ -7,8 +7,7 @@ export const useStyles = () => {
   return {
     notifyBar: css`
       width: 100%;
-      background-color: black;
-      color: white;
+      background-color: #ff5252;
       font-size: 16px;
       padding: 5px 15px;
       box-shadow: 0 0 2px;
@@ -17,11 +16,13 @@ export const useStyles = () => {
       align-items: center;
       `,
     notifyText: css`
+      color: black;
       margin: 0px;
     `,
     notifyClose: css`
-      border: 1px solid white;
+      border: 1px solid #0d08801;
       cursor: pointer;
+      color: black;
     `,
     hide: css`
       display: none;
