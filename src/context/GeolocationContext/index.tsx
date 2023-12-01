@@ -24,6 +24,11 @@ const GeolocationProvider: React.FC = ({ children }) => {
       }
     };
 
+    // To remove hidden inputs from MuiSelect to fix missing id and name props for form elements
+    const muiSelectHiddenInputs = document.querySelectorAll('input.MuiSelect-nativeInput').forEach((input) => {
+      input.remove();
+    });
+
     fetchGeolocation();
   }, []);
 

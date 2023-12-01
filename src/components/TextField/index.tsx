@@ -7,6 +7,15 @@ import Typography from "@mui/material/Typography";
 import React, { InputHTMLAttributes } from "react";
 import { Token } from "types";
 
+const generateRandomString = (length: number)=> {
+  var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  var result = '';
+  for (var i = 0; i < length; i++) {
+    result += characters.charAt(Math.floor(Math.random() * characters.length));
+  }
+  return result;
+}
+
 export interface TextFieldProps extends InputHTMLAttributes<HTMLInputElement> {
   className?: string;
   label?: string;
@@ -88,6 +97,7 @@ export const TextField: React.FC<TextFieldProps> = ({
         )}
 
         <input
+          name={`text_input_${generateRandomString(10)}`}
           css={styles.getInput({
             hasRightAdornment: !!rightAdornment,
             isSmall,

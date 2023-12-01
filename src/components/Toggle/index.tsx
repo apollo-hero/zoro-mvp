@@ -7,6 +7,15 @@ import React from 'react';
 import { InfoIcon } from '../InfoIcon';
 import { useStyles } from './styles';
 
+const generateRandomString = (length: number)=> {
+  var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  var result = '';
+  for (var i = 0; i < length; i++) {
+    result += characters.charAt(Math.floor(Math.random() * characters.length));
+  }
+  return result;
+}
+
 export interface ToggleProps {
   onChange: SwitchBaseProps['onChange'];
   value: boolean;
@@ -40,6 +49,7 @@ export const Toggle = ({
       )}
 
       <Switch
+        name={`switch_toggle_${generateRandomString(10)}`}
         css={styles.getSwitch({ isLight })}
         focusVisibleClassName=".Mui-focusVisible"
         disableRipple
