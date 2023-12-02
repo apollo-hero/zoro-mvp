@@ -10,7 +10,7 @@ export const useStyles = () => {
       padding: 0 ${theme.spacing(10)};
       background-color: var(--color-bg-main);
       display: flex;
-      justify-content: flex-end;
+      justify-content: flex-start;
       align-items: center;
 
       ${theme.breakpoints.down('lg')} {
