@@ -9,6 +9,7 @@ import Account from 'pages/Account';
 import Dashboard from 'pages/Dashboard';
 import Market from 'pages/Market';
 import Pool from 'pages/Pool';
+import NotFound from 'pages/NotFound';
 
 const Switch = () => {
   const { accountAddress } = useAuth();
@@ -36,7 +37,9 @@ const Switch = () => {
       {!isFeatureEnabled('isolatedPools') && (
         <Route exact path={routes.markets.path} component={Pool} />
       )}
-      <Redirect to={routes.dashboard.path} />
+      <Route exact path={routes.notfound.path} component={NotFound} />
+
+      <Redirect to={routes.notfound.path} />
     </RRSwitch>
   );
 };

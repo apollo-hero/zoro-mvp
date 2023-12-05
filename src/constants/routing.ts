@@ -4,10 +4,11 @@ export enum Subdirectory {
   DASHBOARD = '/',
   ACCOUNT = '/account',
   //XVS = '/xvs',
-  //POOLS = '/pools',
-  //POOL = '/pool/:poolComptrollerAddress',
+  POOLS = '/pools',
+  POOL = '/pool/:poolComptrollerAddress',
   MARKETS = '/markets/:poolComptrollerAddress',
   MARKET = '/market/:vTokenAddress',
+  NOTFOUND = '/404',
   //HISTORY = '/history',
   //VAULTS = '/vaults',
   //GOVERNANCE = '/governance',
@@ -29,6 +30,7 @@ const routeSubdirectories = {
   market: isFeatureEnabled('isolatedPools')
     ? [Subdirectory.POOLS, Subdirectory.POOL, Subdirectory.MARKET]
     : [Subdirectory.MARKETS, Subdirectory.MARKET],
+  notfound: [Subdirectory.NOTFOUND],
   //governance: [Subdirectory.GOVERNANCE],
   //governanceProposal: [Subdirectory.GOVERNANCE, Subdirectory.PROPOSAL],
   //governanceLeaderBoard: [Subdirectory.GOVERNANCE, Subdirectory.LEADER_BOARD],
