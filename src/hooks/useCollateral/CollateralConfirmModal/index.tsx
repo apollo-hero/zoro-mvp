@@ -5,7 +5,7 @@ import React from 'react';
 import { useTranslation } from 'translation';
 import { Asset } from 'types';
 
-import  TranscationGraphics from 'assets/img/Transcation_Graphics.png';
+import { ReactComponent as TransactionGraphics } from 'assets/img/Transaction_Graphics.svg';
 
 import { useStyles } from './styles';
 
@@ -27,11 +27,13 @@ export const CollateralConfirmModal: React.FC<ConfirmCollateralModalProps> = ({
   return (
     <Modal className="venus-modal transcation-coin-modal" isOpen={!!asset} handleClose={handleClose} title={title}>
       <section css={styles.collateralModalContainer}>
-        {/* <LogoWithText className="logo" /> */}
-        <img src={TranscationGraphics} className='transcationgraphics-logo-img' />
+        <div css={styles.logoContainer}>
+          <TransactionGraphics css={styles.transactiongraphics_logo} />
+          <div css={styles.logoEllipse} />
+        </div>
         <Icon className="voting-spinner" name="loading" size="28px" css={styles.loadingIcon} />
 
-        <Typography component="p" variant="body2">
+        <Typography css={styles.confirmText} component="p" variant="body2">
           {t('markets.collateralConfirmModal.confirmText')}
         </Typography>
       </section>
