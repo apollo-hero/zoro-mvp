@@ -209,6 +209,14 @@
   "footer": {
     "latestNumber": "Latest Block:\u00a0"
   },
+  "tos": {
+    "title": "Terms",
+    "header": "Terms of Service"
+  },
+  "pp": {
+    "title": "Privacy",
+    "header": "Privacy Policy"
+  },
   "history": {
     "all": "All",
     "approval": "Approval",

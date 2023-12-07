@@ -65,6 +65,14 @@ export const useStyles = () => {
         background-color: ${theme.palette.button.dark};
       }
     `,
+    tospp: css`
+      margin-left: ${theme.spacing(6)};
+    `,
+    tosppItem: css`
+      text-decoration: none;
+      margin: 0px ${theme.spacing(2)};
+      color: ${theme.palette.text.secondary};
+    `,
     theme,
   };
 };

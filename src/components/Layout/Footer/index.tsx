@@ -5,7 +5,6 @@ import Typography from "@mui/material/Typography";
 import { useGetBlockNumber } from "clients/api";
 import { Icon } from "components/Icon";
 import config from "config";
-import { TOKENS } from "constants/tokens";
 import {
   ZORO_DISCORD_URL,
   ZORO_GITHUB_URL,
@@ -13,16 +12,29 @@ import {
   ZORO_TWITTER_URL,
   ZORO_TELEGRAM_URL,
 } from "constants/urls";
-import React from "react";
+import React, { useState } from "react";
 import { useTranslation } from "translation";
-
+import TosModal from "components/TosPPModal/TosModal";
+import PPModal from "components/TosPPModal/PPModal";
 export interface FooterUiProps {
   currentBlockNumber: number | undefined;
 }
 
 export const FooterUi: React.FC<FooterUiProps> = ({ currentBlockNumber }) => {
+  const [openTos, setOpenTos] = useState(false);
+  const [openPP, setOpenPP] = useState(false);
   const styles = useStyles();
   const { t } = useTranslation();
+
+  const toggleModalTos = (e) => {
+    e.preventDefault();
+    setOpenTos(!openTos);
+  }
+  
+  const toggleModalPP = (e) => {
+    e.preventDefault();
+    setOpenPP(!openPP);
+  }
 
   return (
     <div css={styles.container}>
@@ -107,6 +119,27 @@ export const FooterUi: React.FC<FooterUiProps> = ({ currentBlockNumber }) => {
           />
         </a>
       </div>
+
+      <div css={styles.tospp}>
+        <Typography
+          component="a"
+          css={styles.tosppItem}
+          rel="noreferrer"
+          onClick={toggleModalTos}
+        >
+          {t("tos.title")}
+        </Typography>
+        <Typography
+          component="a"
+          css={styles.tosppItem}
+          rel="noreferrer"
+          onClick={toggleModalPP}
+        >
+          {t("pp.title")}
+        </Typography>
+      </div>
+      <TosModal open={openTos} handleClose={toggleModalTos} />
+      <PPModal open={openPP} handleClose={toggleModalPP} />
     </div>
   );
 };
