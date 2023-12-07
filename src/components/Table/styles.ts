@@ -9,6 +9,7 @@ export const useStyles = () => {
     getRoot: ({ breakpoint }: { breakpoint: keyof typeof BREAKPOINTS['values'] }) => css`
       padding-left: 0;
       padding-right: 0;
+      background-color: ${theme.palette.secondary.light};
 
       ${theme.breakpoints.down(breakpoint)} {
         background-color: transparent;

@@ -6,6 +6,13 @@ export const useStyles = () => {
   const theme = useTheme();
 
   return {
+    container: css`
+      padding: ${theme.spacing(2)};
+      background-color: ${theme.palette.secondary.main};
+      border-radius: ${theme.spacing(6)};
+      margin-bottom: ${theme.spacing(6)};
+      border: 1px ${theme.palette.secondary.light} solid;
+    `,
     header: css`
       margin-bottom: ${theme.spacing(6)};
 
