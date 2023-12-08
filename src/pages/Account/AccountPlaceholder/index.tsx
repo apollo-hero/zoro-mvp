@@ -20,6 +20,7 @@ const AccountPlaceholder: React.FC = () => {
           src={wallet}
           css={styles.wallet}
           alt={t('dashboard.connectWalletBanner.illustration.alt')}
+          title={t('dashboard.connectWalletBanner.illustration.alt')}
         />
       </div>
       <Typography css={styles.placeholderText} variant="h4">

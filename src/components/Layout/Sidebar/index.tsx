@@ -12,8 +12,8 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import Menu from "@mui/material/Menu";
 import Typography from "@mui/material/Typography";
-import { ReactComponent as LogoNoText } from "assets/img/Logo-01.svg";
-import { ReactComponent as LogoDesktop } from "assets/img/Logo-02.svg";
+import logo_mobile from "assets/img/Logo-01.svg";
+import logo_desktop from "assets/img/Logo-02.svg";
 import React, { useState } from "react";
 import { useTranslation } from "translation";
 
@@ -45,8 +45,8 @@ export const SidebarUi: React.FC = () => {
           className="sidebar-menu-logo-option-list-wrap"
         >
           <Toolbar css={styles.toolbar} className="sidebar-logo">
-            <LogoDesktop css={styles.logo} />
-            <LogoNoText css={styles.logoClosed} />
+            <img src={logo_desktop} alt="Zoro Desktop Logo" css={styles.logo} title="Zoro Protocol" />
+            <img src={logo_mobile} alt="Zoro Mobile Logo" css={styles.logoClosed} title="Zoro Protocol" />
           </Toolbar>
 
           <List>

@@ -217,6 +217,10 @@
     "title": "Privacy",
     "header": "Privacy Policy"
   },
+  "notfound": {
+    "alt": "Not Found - 404 error",
+    "content": "You reached this page in error"
+  },
   "history": {
     "all": "All",
     "approval": "Approval",
