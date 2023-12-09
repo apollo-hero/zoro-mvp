@@ -166,6 +166,7 @@ export const useStyles = () => {
     logoClosed: css`
       display: none;
       ${theme.breakpoints.down("xl")} {
+        max-width: 40px;
         display: block;
       }
     `,
