@@ -22,6 +22,7 @@ const TosModal: React.FC<TosModalProps> = ({ open, handleClose }) => {
       title={t("tos.header")}
       css={styles.tosModal}
       disableEscapeKeyDown={true}
+      onBackdropClick={"false"}
     >
       <div css={styles.tosContent} className="tosContent">
         <ol>
