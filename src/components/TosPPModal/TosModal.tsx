@@ -1,7 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import TosPPModal from ".";
 import { useStyles } from "./styles";
-import { Modal, ModalProps } from "components";
+import { ModalProps } from "components";
 import React from "react";
 import { useTranslation } from "translation";
 import { SecondaryButton } from "../Button";
@@ -21,6 +21,7 @@ const TosModal: React.FC<TosModalProps> = ({ open, handleClose }) => {
       handleClose={handleClose}
       title={t("tos.header")}
       css={styles.tosModal}
+      disableEscapeKeyDown={true}
     >
       <div css={styles.tosContent} className="tosContent">
         <ol>

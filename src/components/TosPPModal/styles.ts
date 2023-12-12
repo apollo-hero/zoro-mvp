@@ -17,6 +17,10 @@ export const useStyles = () => {
       .tosContent ol {
         padding-left: 20px;
       }
+
+      .modal-close-btn {
+        display: none!important;
+      }
     `,
     tosContent: css`
       width: 100%;
