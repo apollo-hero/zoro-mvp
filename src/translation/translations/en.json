@@ -211,7 +211,8 @@
   },
   "tos": {
     "title": "Terms",
-    "header": "Terms of Service"
+    "header": "Terms of Service",
+    "button": "Accept Terms"
   },
   "pp": {
     "title": "Privacy",

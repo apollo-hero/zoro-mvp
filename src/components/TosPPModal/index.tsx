@@ -17,7 +17,7 @@ const TosPPModal: React.FC<TosPPModalProps> = ({
 }) => {
   
   return (
-    <Modal isOpen={isOpen} handleClose={handleClose} title={title}>
+    <Modal isOpen={isOpen} handleClose={handleClose} title={title} {...otherProps} >
         <>{children}</>
     </Modal>
   );
