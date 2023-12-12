@@ -29,9 +29,7 @@ export const useStyles = () => {
     `,
     acceptTerms: css`
       background-color: #dfbe52;
-      float: right;
-      margin-top: 10px;
-      margin-bottom: 10px;
+      margin: 10px auto;
       border: none;
     `,
     ppModal: css`
@@ -39,6 +37,7 @@ export const useStyles = () => {
       max-width: 640px;
 
       .ppContent ol li strong {
+        display: block;
         font-size: 20px;
       }
       .ppContent ol li span {
