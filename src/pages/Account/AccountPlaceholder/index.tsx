@@ -7,7 +7,7 @@ import { useTranslation } from 'translation';
 import { routes } from 'constants/routing';
 
 import { useStyles } from './styles';
-import wallet from './../../../assets/img/wallet.png';
+import wallet from './../../../assets/img/wallet.webp';
 
 const AccountPlaceholder: React.FC = () => {
   const { t } = useTranslation();

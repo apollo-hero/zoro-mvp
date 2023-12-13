@@ -17,9 +17,9 @@
 
 @font-face {
   font-family: "ProximaNova";
-  src: url("../fonts/proximaNova/proximaNovaRegularIt.woff2") format("woff2"),
-    url("../fonts/proximaNova/proximaNovaRegularIt.woff") format("woff"),
-    url("../fonts/proximaNova/proximaNovaRegularIt.ttf") format("truetype");
+  src: url("/fonts/proximaNova/proximaNovaRegularIt.woff2") format("woff2"),
+    url("/fonts/proximaNova/proximaNovaRegularIt.woff") format("woff"),
+    url("/fonts/proximaNova/proximaNovaRegularIt.ttf") format("truetype");
   font-weight: normal;
   font-style: italic;
   font-display: swap;
@@ -27,9 +27,9 @@
 
 @font-face {
   font-family: "ProximaNova";
-  src: url("../fonts/proximaNova/proximaNovaRegular.woff2") format("woff2"),
-    url("../fonts/proximaNova/proximaNovaRegular.woff") format("woff"),
-    url("../fonts/proximaNova/proximaNovaRegular.ttf") format("truetype");
+  src: url("/fonts/proximaNova/proximaNovaRegular.woff2") format("woff2"),
+    url("/fonts/proximaNova/proximaNovaRegular.woff") format("woff"),
+    url("/fonts/proximaNova/proximaNovaRegular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -37,9 +37,9 @@
 
 @font-face {
   font-family: "ProximaNova";
-  src: url("../fonts/proximaNova/proximaNovaSemiboldIt.woff2") format("woff2"),
-    url("../fonts/proximaNova/proximaNovaSemiboldIt.woff") format("woff"),
-    url("../fonts/proximaNova/proximaNovaSemiboldIt.ttf") format("truetype");
+  src: url("/fonts/proximaNova/proximaNovaSemiboldIt.woff2") format("woff2"),
+    url("/fonts/proximaNova/proximaNovaSemiboldIt.woff") format("woff"),
+    url("/fonts/proximaNova/proximaNovaSemiboldIt.ttf") format("truetype");
   font-weight: 600;
   font-style: italic;
   font-display: swap;
@@ -47,9 +47,9 @@
 
 @font-face {
   font-family: "ProximaNova";
-  src: url("../fonts/proximaNova/proximaNovaSemibold.woff2") format("woff2"),
-    url("../fonts/proximaNova/proximaNovaSemibold.woff") format("woff"),
-    url("../fonts/proximaNova/proximaNovaSemibold.ttf") format("truetype");
+  src: url("/fonts/proximaNova/proximaNovaSemibold.woff2") format("woff2"),
+    url("/fonts/proximaNova/proximaNovaSemibold.woff") format("woff"),
+    url("/fonts/proximaNova/proximaNovaSemibold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -57,9 +57,9 @@
 
 @font-face {
   font-family: "ProximaNova";
-  src: url("../fonts/proximaNova/proximaNovaBold.woff2") format("woff2"),
-    url("../fonts/proximaNova/proximaNovaBold.woff") format("woff"),
-    url("../fonts/proximaNova/proximaNovaBold.ttf") format("truetype");
+  src: url("/fonts/proximaNova/proximaNovaBold.woff2") format("woff2"),
+    url("/fonts/proximaNova/proximaNovaBold.woff") format("woff"),
+    url("/fonts/proximaNova/proximaNovaBold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -67,9 +67,9 @@
 
 @font-face {
   font-family: "ProximaNova";
-  src: url("../fonts/proximaNova/proximaNovaBoldIt.woff2") format("woff2"),
-    url("../fonts/proximaNova/proximaNovaBoldIt.woff") format("woff"),
-    url("../fonts/proximaNova/proximaNovaBoldIt.ttf") format("truetype");
+  src: url("/fonts/proximaNova/proximaNovaBoldIt.woff2") format("woff2"),
+    url("/fonts/proximaNova/proximaNovaBoldIt.woff") format("woff"),
+    url("/fonts/proximaNova/proximaNovaBoldIt.ttf") format("truetype");
   font-weight: bold;
   font-style: italic;
   font-display: swap;
@@ -119,7 +119,7 @@ i {
   // justify-content: start !important;
 }
 .connect-wallet-card-wrap {
-  background-image: url(./../img/card-bg-img.jpg) !important;
+  background-image: url(./../img/card-bg-img.webp) !important;
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: contain;

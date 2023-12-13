@@ -1,6 +1,6 @@
 import { css } from '@emotion/react';
 import { useTheme } from '@mui/material';
-import notfound_bg from '../../assets/img/notfound-bg.png';
+import notfound_bg from '../../assets/img/notfound-bg.webp';
 
 export const useStyles = () => {
   const theme = useTheme();
