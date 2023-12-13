@@ -59,6 +59,7 @@ export const FooterUi: React.FC<FooterUiProps> = ({ currentBlockNumber }) => {
           href={ZORO_SUBSTACK_URL}
           target="_blank"
           rel="noreferrer"
+          aria-label="Follow Medium articles"
         >
           <Icon
             name="medium"
@@ -72,6 +73,7 @@ export const FooterUi: React.FC<FooterUiProps> = ({ currentBlockNumber }) => {
           href={ZORO_DISCORD_URL}
           target="_blank"
           rel="noreferrer"
+          aria-label="Join Discord Community"
         >
           <Icon
             name="discord"
@@ -85,6 +87,7 @@ export const FooterUi: React.FC<FooterUiProps> = ({ currentBlockNumber }) => {
           href={ZORO_TWITTER_URL}
           target="_blank"
           rel="noreferrer"
+          aria-label="Follow Twitter"
         >
           <Icon
             name="twitter"
@@ -98,6 +101,7 @@ export const FooterUi: React.FC<FooterUiProps> = ({ currentBlockNumber }) => {
           href={ZORO_GITHUB_URL}
           target="_blank"
           rel="noreferrer"
+          aria-label="Explore GitHub repositories"
         >
           <Icon
             name="github"
@@ -111,6 +115,7 @@ export const FooterUi: React.FC<FooterUiProps> = ({ currentBlockNumber }) => {
           href={ZORO_TELEGRAM_URL}
           target="_blank"
           rel="noreferrer"
+          aria-label="Join Telegram Community"
         >
           <Icon
             name="telegram"

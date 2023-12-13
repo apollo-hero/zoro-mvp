@@ -100,7 +100,7 @@ export const SidebarUi: React.FC = () => {
             className="custom-btn-wrap"
           />
 
-          <button type="button" onClick={openMenu} css={styles.actionButton}>
+          <button id="mobile_burger" title="Burger Menu" type="button" onClick={openMenu} css={styles.actionButton}>
             <Icon name="burger" css={styles.burger} />
           </button>
         </div>

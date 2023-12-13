@@ -27,6 +27,7 @@ export const useStyles = () => {
       }
     `,
     title: css`
+      font-size: 1.25rem;
       margin-bottom: ${theme.spacing(3)};
     `,
     description: css`
