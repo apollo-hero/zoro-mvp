@@ -25,7 +25,7 @@ export const CollateralConfirmModal: React.FC<ConfirmCollateralModalProps> = ({
     : t('markets.collateralConfirmModal.enable', { asset: asset?.vToken.underlyingToken.symbol });
 
   return (
-    <Modal className="venus-modal transcation-coin-modal" isOpen={!!asset} handleClose={handleClose} title={title}>
+    <Modal className="zoro-modal transcation-coin-modal" isOpen={!!asset} handleClose={handleClose} title={title}>
       <section css={styles.collateralModalContainer}>
         <div css={styles.logoContainer}>
           <TransactionGraphics css={styles.transactiongraphics_logo} />

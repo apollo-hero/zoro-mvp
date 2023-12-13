@@ -43,7 +43,6 @@
     "@sentry/tracing": "^7.43.0",
     "@uiw/react-markdown-preview": "^4.1.13",
     "@uiw/react-md-editor": "^3.14.3",
-    "@venusprotocol/isolated-pools": "^1.1.0",
     "@web3-onboard/coinbase": "^2.2.6",
     "@web3-onboard/core": "^2.21.2",
     "@web3-onboard/injected-wallets": "^2.10.9",

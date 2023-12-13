@@ -176,10 +176,6 @@ export { default as useGetTokenBalances } from './queries/getTokenBalances/useGe
 //export * from './queries/getVrtConversionRatio';
 //export { default as useGetVrtConversionRatio } from './queries/getVrtConversionRatio/useGetVrtConversionRatio';
 
-//export { default as getVenusVaiVaultDailyRate } from './queries/getVenusVaiVaultDailyRate';
-//export * from './queries/getVenusVaiVaultDailyRate';
-//export { default as useGetVenusVaiVaultDailyRate } from './queries/getVenusVaiVaultDailyRate/useGetVenusVaiVaultDailyRate';
-
 //export { default as getXvsWithdrawableAmount } from './queries/getXvsWithdrawableAmount';
 //export * from './queries/getXvsWithdrawableAmount';
 

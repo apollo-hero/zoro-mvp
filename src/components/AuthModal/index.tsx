@@ -31,7 +31,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
 
   return (
     <Modal
-      className="venus-modal"
+      className="zoro-modal"
       isOpen={isOpen}
       handleClose={onClose}
       noHorizontalPadding={!accountAddress}

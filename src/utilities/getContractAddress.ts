@@ -1,5 +1,3 @@
-//import isolatedLendingMainnetDeployments from '@venusprotocol/isolated-pools/deployments/bscmainnet.json';
-//import isolatedLendingTestnetDeployments from '@venusprotocol/isolated-pools/deployments/bsctestnet.json';
 import config from 'config';
 
 import mainContractChainAddresses from 'constants/contracts/addresses/main.json';

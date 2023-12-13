@@ -1,4 +1,3 @@
-//import { abi as poolLensAbi } from '@venusprotocol/isolated-pools/artifacts/contracts/Lens/PoolLens.sol/PoolLens.json';
 import { Contract, ContractInterface, Signer } from 'zksync-web3';
 import { Token, VToken } from 'types';
 import { areTokensEqual, getContractAddress } from 'utilities';

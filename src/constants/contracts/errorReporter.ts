@@ -1,5 +1,3 @@
-/** Values copied from https://github.com/VenusProtocol/venus-protocol/blob/develop/contracts/ErrorReporter.sol */
-
 export enum ComptrollerErrorReporterError {
   NO_ERROR,
   UNAUTHORIZED,
