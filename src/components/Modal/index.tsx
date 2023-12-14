@@ -32,7 +32,6 @@ export const Modal: React.FC<ModalProps> = ({
     <MUIModal
       open={isOpen}
       onClose={handleClose}
-      onBackdropClick={handleClose}
       closeAfterTransition
       BackdropComponent={Backdrop}
       BackdropProps={{
