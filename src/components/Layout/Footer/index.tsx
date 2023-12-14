@@ -131,6 +131,8 @@ export const FooterUi: React.FC<FooterUiProps> = ({ currentBlockNumber }) => {
           css={styles.tosppItem}
           rel="noreferrer"
           onClick={toggleModalTos}
+          aria-label="Read Terms of Service"
+          href="#"
         >
           {t("tos.title")}
         </Typography>
@@ -139,6 +141,8 @@ export const FooterUi: React.FC<FooterUiProps> = ({ currentBlockNumber }) => {
           css={styles.tosppItem}
           rel="noreferrer"
           onClick={toggleModalPP}
+          aria-label="Read Privacy Policy"
+          href="#"
         >
           {t("pp.title")}
         </Typography>
